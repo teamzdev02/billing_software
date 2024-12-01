@@ -1,0 +1,71 @@
+/* General Styles */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.toolstrip {
+    margin-bottom: 20px;
+}
+
+.toolstrip button {
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.toolstrip button:hover {
+    background-color: #45a049;
+}
+
+.data-grid {
+    margin-top: 20px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-grid th, .data-grid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-grid th {
+    background-color: #f2f2f2;
+}

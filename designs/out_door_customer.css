@@ -1,0 +1,40 @@
+/* Additional styles specific to the Outdoor Customer page */
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+/* Table Customization */
+#dataGridView1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#dataGridView1 th, #dataGridView1 td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-section .flex-row {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}

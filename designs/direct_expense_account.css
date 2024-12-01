@@ -1,0 +1,70 @@
+/* Direct Expense Account Styles */
+
+/* Container and form styles */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox layout for date input fields */
+.flex-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+#dataGridView {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#dataGridView th {
+    background-color: #007bff;
+    color: white;
+}
+
+#dataGridView td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Table Hover Effect */
+#dataGridView tbody tr:hover {
+    background-color: #e1f5ff;
+}
+
+/* Button and Toolbar Styles */
+.toolbar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toolbar button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Focus Styles */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

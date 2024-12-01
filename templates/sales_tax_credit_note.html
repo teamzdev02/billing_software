@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Credit Note</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/sales_tax_credit_note.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sales Tax Credit Note</h1>
+        </header>
+
+        <!-- Date Filters Section -->
+        <div class="date-filters">
+            <div class="filter-row">
+                <label for="dateFrom">Date From:</label>
+                <input type="date" id="dateFrom">
+                <label for="dateTo">Date To:</label>
+                <input type="date" id="dateTo">
+            </div>
+            <button id="generateReport">Generate Report</button>
+        </div>
+
+        <!-- Report Viewer Section -->
+        <div class="report-section">
+            <h3>Report Preview</h3>
+            <div id="reportViewer">
+                <p>The sales tax credit note report will be displayed here.</p>
+            </div>
+        </div>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolButton6">Tool 6</button>
+            <button id="toolButton5">Tool 5</button>
+        </div>
+    </div>
+
+    <script src="../scripts/sales_tax_credit_note.js"></script>
+</body>
+</html>

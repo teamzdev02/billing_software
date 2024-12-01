@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Report</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/rrpt_selling.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selling Report</h1>
+        </header>
+
+        <!-- Report Filters Section -->
+        <div class="report-filters">
+            <div class="filter-row">
+                <label for="dateFrom">Date From:</label>
+                <input type="date" id="dateFrom">
+                <label for="dateTo">Date To:</label>
+                <input type="date" id="dateTo">
+            </div>
+            <div class="filter-row">
+                <label for="comboBox1">Category:</label>
+                <select id="comboBox1">
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="checkBox1">Include Archived:</label>
+                <input type="checkbox" id="checkBox1">
+            </div>
+            <button id="generateReport">Generate Report</button>
+        </div>
+
+        <!-- Report Viewer Section -->
+        <div class="report-section">
+            <h3>Report Preview</h3>
+            <div id="reportViewer">
+                <!-- Placeholder for the Crystal Report Viewer -->
+                <p>The selling report will be displayed here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/rrpt_selling.js"></script>
+</body>
+</html>

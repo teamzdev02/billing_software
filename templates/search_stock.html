@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Stock</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/search_stock.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Stock</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="cbo_Category">Category:</label>
+            <select id="cbo_Category">
+                <option value="all">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+
+            <label for="cbo_Brand">Brand:</label>
+            <select id="cbo_Brand">
+                <option value="all">All Brands</option>
+                <option value="brand1">Brand 1</option>
+                <option value="brand2">Brand 2</option>
+            </select>
+
+            <label for="cmb_subcat">Subcategory:</label>
+            <select id="cmb_subcat">
+                <option value="all">All Subcategories</option>
+                <option value="subcat1">Subcategory 1</option>
+                <option value="subcat2">Subcategory 2</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="checkBox1">
+                Include Expired
+            </label>
+        </div>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolStripButton1">Add</button>
+            <button id="toolStripButton2">Edit</button>
+            <button id="toolStripButton3">Delete</button>
+            <button id="toolStripButton6">Export</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <progress id="progressBar1" value="0" max="100"></progress>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Tag No</th>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Make</th>
+                        <th>MFR</th>
+                        <th>Batch</th>
+                        <th>Exp Date</th>
+                        <th>PSize</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                        <th>Selling Rate</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/search_stock.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Management</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/unit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Management</h1>
+
+        <!-- Toolstrip with buttons -->
+        <div class="toolstrip">
+            <button id="addButton" class="toolstrip-btn">Add</button>
+            <button id="editButton" class="toolstrip-btn">Edit</button>
+            <button id="deleteButton" class="toolstrip-btn">Delete</button>
+            <button id="saveButton" class="toolstrip-btn">Save</button>
+            <button id="refreshButton" class="toolstrip-btn">Refresh</button>
+        </div>
+
+        <!-- Panel for data entry -->
+        <div class="panel">
+            <div class="form-group">
+                <label for="txt_Mcode">Unit Code</label>
+                <input type="text" id="txt_Mcode" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="txt_mname">Unit Name</label>
+                <input type="text" id="txt_mname" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="checkBox1">Is Active</label>
+                <input type="checkbox" id="checkBox1">
+            </div>
+        </div>
+
+        <!-- DataGrid Section -->
+        <div class="datagrid-section">
+            <h2>Units List</h2>
+            <table id="unitDataGrid">
+                <thead>
+                    <tr>
+                        <th>Unit Code</th>
+                        <th>Unit Name</th>
+                        <th>Is Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/unit.js"></script>
+</body>
+</html>

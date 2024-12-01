@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/credit_note.css">
+    <title>Credit Note</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Note</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnAdd">Add</button>
+            <button id="btnEdit">Edit</button>
+            <button id="btnSave">Save</button>
+            <button id="btnDelete">Delete</button>
+        </div>
+
+        <!-- Credit Note Form -->
+        <div class="credit-note-form">
+            <div class="flex-column">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+
+                <label for="reference">Reference</label>
+                <input type="text" id="reference" placeholder="Enter Reference">
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter Amount">
+            </div>
+
+            <div class="flex-column">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter Description"></textarea>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Reference</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../scripts/credit_note.js"></script>
+</body>
+</html>

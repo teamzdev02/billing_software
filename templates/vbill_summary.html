@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Summary</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/vbill_summary.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Summary</h1>
+
+        <!-- Date Selection and Inputs -->
+        <div class="date-selection">
+            <div class="input-group">
+                <label for="mtb_TDate">From Date:</label>
+                <input type="date" id="mtb_TDate">
+            </div>
+            <div class="input-group">
+                <label for="mtb_FDate">To Date:</label>
+                <input type="date" id="mtb_FDate">
+            </div>
+            <div class="input-group">
+                <label for="txtYear1">Year 1:</label>
+                <input type="text" id="txtYear1">
+            </div>
+            <div class="input-group">
+                <label for="txtDay1">Day 1:</label>
+                <input type="text" id="txtDay1">
+            </div>
+            <div class="input-group">
+                <label for="txtYear">Year:</label>
+                <input type="text" id="txtYear">
+            </div>
+            <div class="input-group">
+                <label for="txtDay">Day:</label>
+                <input type="text" id="txtDay">
+            </div>
+            <div class="input-group">
+                <label for="txtmonth1">Month 1:</label>
+                <input type="text" id="txtmonth1">
+            </div>
+            <div class="input-group">
+                <label for="txtmonth">Month:</label>
+                <input type="text" id="txtmonth">
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="checkbox-section">
+            <label for="checkBox1">Checkbox 1:</label>
+            <input type="checkbox" id="checkBox1">
+        </div>
+
+        <!-- DataGrid -->
+        <div class="datagrid-section">
+            <h2>Summary Details</h2>
+            <table id="billSummaryGrid">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Code</th>
+                        <th>LNo</th>
+                        <th>LName</th>
+                        <th>Debit</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Crystal Report Viewer (if applicable for your backend) -->
+        <div class="crystal-report-section">
+            <!-- You can add your report viewer here if needed -->
+        </div>
+    </div>
+
+    <script src="../scripts/vbill_summary.js"></script>
+</body>
+</html>

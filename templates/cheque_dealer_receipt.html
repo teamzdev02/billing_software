@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheque Dealer Receipt</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/cheque_dealer_receipt.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dealer Receipt Form -->
+        <div class="form-section">
+            <label for="dealerName">Dealer Name:</label>
+            <input type="text" id="dealerName">
+
+            <label for="receiptDate">Receipt Date:</label>
+            <input type="date" id="receiptDate">
+
+            <label for="chequeNumber">Cheque Number:</label>
+            <input type="text" id="chequeNumber">
+
+            <label for="bankName">Bank Name:</label>
+            <input type="text" id="bankName">
+
+            <label for="chequeAmount">Cheque Amount:</label>
+            <input type="text" id="chequeAmount">
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch">
+
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="Pending">Pending</option>
+                <option value="Cleared">Cleared</option>
+                <option value="Bounced">Bounced</option>
+            </select>
+
+            <label for="words">Amount in Words:</label>
+            <input type="text" id="words" readonly>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="grid-section">
+            <table id="receiptGrid">
+                <thead>
+                    <tr>
+                        <th>Cheque Number</th>
+                        <th>Dealer Name</th>
+                        <th>Bank Name</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Receipt Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <tr>
+                        <td>12345</td>
+                        <td>ABC Dealer</td>
+                        <td>XYZ Bank</td>
+                        <td>$500</td>
+                        <td>Cleared</td>
+                        <td>2024-01-01</td>
+                    </tr>
+                    <tr>
+                        <td>12346</td>
+                        <td>XYZ Dealer</td>
+                        <td>ABC Bank</td>
+                        <td>$200</td>
+                        <td>Pending</td>
+                        <td>2024-01-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tool Strip Section (Buttons) -->
+        <div class="toolbar">
+            <button id="addButton">Add</button>
+            <button id="editButton">Edit</button>
+            <button id="deleteButton">Delete</button>
+            <button id="printButton">Print</button>
+        </div>
+    </div>
+
+    <script src="../scripts/cheque_dealer_receipt.js"></script>
+</body>
+</html>

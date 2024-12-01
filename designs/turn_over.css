@@ -1,0 +1,50 @@
+/* turnover.css */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.toolstrip {
+    margin-bottom: 20px;
+}
+
+.toolstrip button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toolstrip button:hover {
+    background-color: #45a049;
+}
+
+.date-filters, .text-inputs, .radio-buttons, .checkboxes {
+    margin-bottom: 20px;
+}
+
+.date-filters input, .text-inputs input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+.radio-buttons input, .checkboxes input {
+    margin-right: 10px;
+}
+
+.report-viewer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#crystalReportViewer1 {
+    min-height: 400px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+    border: 1px dashed #bbb;
+}

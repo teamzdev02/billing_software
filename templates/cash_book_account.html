@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Book Account</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/cash_book_account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="filterBtn">Filter</button>
+            <button id="printBtn">Print</button>
+            <button id="closeBtn">Close</button>
+        </div>
+
+        <div class="date-filters">
+            <div>
+                <label for="startDate">From Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div>
+                <label for="endDate">To Date:</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <div class="grid">
+            <table id="cashBookTable">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Account Name</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Unit</th>
+                        <th>Make</th>
+                        <th>Column 4</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/cash_book_account.js"></script>
+</body>
+</html>

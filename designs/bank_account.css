@@ -1,0 +1,67 @@
+/* Bank Account Page Specific Styles */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Toolbar Styling */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+/* Date Filter Section */
+.filter-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Bank Selector */
+.bank-selector {
+    margin-bottom: 20px;
+}
+
+.bank-selector label {
+    margin-right: 10px;
+}
+
+/* Data Grid */
+.data-grid {
+    margin-top: 20px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-grid th,
+.data-grid td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.data-grid th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

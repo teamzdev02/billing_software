@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Ledger</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/employee_ledger.css"> <!-- Employee Ledger Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Ledger</h1>
+
+        <!-- Filters Section -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="labourName">Labour Name:</label>
+                <select id="labourName">
+                    <option value="">Select Labour</option>
+                    <option value="Labour 1">Labour 1</option>
+                    <option value="Labour 2">Labour 2</option>
+                    <option value="Labour 3">Labour 3</option>
+                </select>
+            </div>
+            <div class="flex-column">
+                <label for="month">Month:</label>
+                <input type="text" id="month" placeholder="e.g., November">
+            </div>
+        </div>
+
+        <!-- Date Range Section -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="startDate">From Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="flex-column">
+                <label for="endDate">To Date:</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <!-- Inputs Section -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="bonus">Bonus:</label>
+                <input type="number" id="bonus" placeholder="Enter Bonus">
+            </div>
+            <div class="flex-column">
+                <label for="penalty">Penalty:</label>
+                <input type="number" id="penalty" placeholder="Enter Penalty">
+            </div>
+            <div class="flex-column">
+                <label for="credit">Credit:</label>
+                <input type="number" id="credit" placeholder="Enter Credit">
+            </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="addRecord">Add Record</button>
+            <button id="clearTable">Clear Table</button>
+        </div>
+
+        <!-- Data Table -->
+        <table id="dataGridView">
+            <thead>
+                <tr>
+                    <th>Labour Name</th>
+                    <th>Ledger Date</th>
+                    <th>Amount</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/employee_ledger.js"></script> <!-- Employee Ledger Specific JS -->
+</body>
+</html>

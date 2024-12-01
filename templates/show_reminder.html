@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Reminder</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/show_reminder.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Show Reminder</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnSave">Save</button>
+            <button id="btnCancel">Cancel</button>
+        </div>
+
+        <!-- Reminder Details -->
+        <div class="reminder-details">
+            <label for="txt_Remarks">Remarks:</label>
+            <textarea id="txt_Remarks" placeholder="Enter remarks here..."></textarea>
+
+            <div class="checkbox-section">
+                <input type="checkbox" id="isActive">
+                <label for="isActive">Is Active</label>
+            </div>
+
+            <label for="lbl_date">Date:</label>
+            <span id="lbl_date"></span>
+        </div>
+    </div>
+
+    <script src="../scripts/show_reminder.js"></script>
+</body>
+</html>

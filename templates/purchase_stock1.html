@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Stock 1</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/purchase_stock1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase Stock 1</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton1">New</button>
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton3">Edit</button>
+            <button id="toolStripButton5">Delete</button>
+            <button id="toolStripButton6">Close</button>
+        </div>
+
+        <!-- Main Form -->
+        <div class="form">
+            <div class="form-row">
+                <label for="txt_ino">Invoice No:</label>
+                <input type="text" id="txt_ino">
+
+                <label for="txt_dname">Dealer Name:</label>
+                <input type="text" id="txt_dname">
+
+                <label for="cmb_dcode">Dealer Code:</label>
+                <select id="cmb_dcode">
+                    <option value="">Select Dealer</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="dateTimePicker1">Entry Date:</label>
+                <input type="date" id="dateTimePicker1">
+
+                <label for="cmb_cat">Category:</label>
+                <select id="cmb_cat">
+                    <option value="">Select Category</option>
+                </select>
+
+                <label for="cmb_subcat">Subcategory:</label>
+                <select id="cmb_subcat">
+                    <option value="">Select Subcategory</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="txt_qty">Quantity:</label>
+                <input type="number" id="txt_qty">
+
+                <label for="txt_rate">Rate:</label>
+                <input type="text" id="txt_rate">
+
+                <label for="txt_srate">Selling Rate:</label>
+                <input type="text" id="txt_srate">
+            </div>
+
+            <div class="form-row">
+                <label for="txt_trate">Tax Rate:</label>
+                <input type="text" id="txt_trate">
+
+                <label for="txt_Discount">Discount:</label>
+                <input type="text" id="txt_Discount">
+
+                <label for="checkBox1">Is Active:</label>
+                <input type="checkbox" id="checkBox1">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="button3">Add Product</button>
+            <button id="button4">Remove Product</button>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="table-container">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Invoice No</th>
+                        <th>Dealer Code</th>
+                        <th>Entry Date</th>
+                        <th>Category</th>
+                        <th>Subcategory</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Selling Rate</th>
+                        <th>Tax Rate</th>
+                        <th>Discount</th>
+                        <th>Is Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress">
+            <label for="progressBar1">Progress:</label>
+            <progress id="progressBar1" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/purchase_stock1.js"></script>
+</body>
+</html>

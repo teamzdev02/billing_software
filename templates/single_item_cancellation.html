@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Item Cancellation</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/single_item_cancellation.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Single Item Cancellation</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnAdd">Add</button>
+            <button id="btnEdit">Edit</button>
+            <button id="btnDelete">Delete</button>
+            <button id="btnSave">Save</button>
+            <button id="btnPrint">Print</button>
+        </div>
+
+        <!-- Input Panel -->
+        <div class="input-panel">
+            <div class="row">
+                <label for="txt_ino">Invoice No:</label>
+                <input type="text" id="txt_ino">
+            </div>
+            <div class="row">
+                <label for="txt_ProductName">Product Name:</label>
+                <input type="text" id="txt_ProductName">
+            </div>
+            <div class="row">
+                <label for="txt_Brand">Brand:</label>
+                <input type="text" id="txt_Brand">
+            </div>
+            <div class="row">
+                <label for="txt_ItemCode">Item Code:</label>
+                <input type="text" id="txt_ItemCode">
+            </div>
+            <div class="row">
+                <label for="txt_MRP">MRP:</label>
+                <input type="text" id="txt_MRP">
+            </div>
+            <div class="row">
+                <label for="txt_CancelledQty">Cancelled Qty:</label>
+                <input type="text" id="txt_CancelledQty">
+            </div>
+            <div class="row">
+                <label for="txt_ExDisc">Extra Discount:</label>
+                <input type="text" id="txt_ExDisc">
+            </div>
+        </div>
+
+        <!-- Date Panel -->
+        <div class="date-panel">
+            <div class="row">
+                <label for="date_from">Date From:</label>
+                <input type="date" id="date_from">
+            </div>
+            <div class="row">
+                <label for="date_to">Date To:</label>
+                <input type="date" id="date_to">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Invoice No</th>
+                        <th>Date</th>
+                        <th>Term</th>
+                        <th>Product</th>
+                        <th>Sub Product</th>
+                        <th>Rate</th>
+                        <th>Qty</th>
+                        <th>MRP</th>
+                        <th>Batch</th>
+                        <th>Item Code</th>
+                        <th>Discount</th>
+                        <th>Customer Name</th>
+                    </tr>
+                </thead>
+                <tbody id="dataGridBody">
+                    <!-- Dynamic Data Rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/single_item_cancellation.js"></script>
+</body>
+</html>

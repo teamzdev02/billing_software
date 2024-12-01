@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Ledger Creation</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/bank_ledger_creation.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bank Ledger Creation</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button id="addBtn">Add</button>
+        <button id="editBtn">Edit</button>
+        <button id="deleteBtn">Delete</button>
+        <button id="refreshBtn">Refresh</button>
+    </div>
+
+    <!-- Bank Ledger Form -->
+    <div class="form-section">
+        <form id="bankLedgerForm">
+            <label for="Cbo_Type">Account Type:</label>
+            <select id="Cbo_Type">
+                <option value="Savings">Savings</option>
+                <option value="Current">Current</option>
+                <option value="Fixed Deposit">Fixed Deposit</option>
+            </select>
+
+            <label for="txt_AccoName">Account Name:</label>
+            <input type="text" id="txt_AccoName" placeholder="Enter account name">
+
+            <label for="txt_AccNo">Account Number:</label>
+            <input type="text" id="txt_AccNo" placeholder="Enter account number">
+
+            <label for="txt_PassNo">Passbook Number:</label>
+            <input type="text" id="txt_PassNo" placeholder="Enter passbook number">
+
+            <label for="txt_Address">Address:</label>
+            <textarea id="txt_Address" placeholder="Enter address"></textarea>
+
+            <label for="txt_Bank">Bank Name:</label>
+            <input type="text" id="txt_Bank" placeholder="Enter bank name">
+
+            <label for="txt_ob">Opening Balance:</label>
+            <input type="number" id="txt_ob" placeholder="Enter opening balance">
+
+            <label for="txt_Mcode">Account Code:</label>
+            <input type="text" id="txt_Mcode" placeholder="Enter account code">
+
+            <button type="submit" id="saveBtn">Save</button>
+        </form>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+        <label for="progressBar">Processing:</label>
+        <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <!-- Data Grid for Bank Ledger -->
+    <div class="data-grid">
+        <table id="ledgerTable">
+            <thead>
+            <tr>
+                <th>Account Type</th>
+                <th>Account Name</th>
+                <th>Account Number</th>
+                <th>Passbook Number</th>
+                <th>Bank Name</th>
+                <th>Opening Balance</th>
+                <th>Account Code</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Savings</td>
+                <td>Sample Account</td>
+                <td>123456789</td>
+                <td>12345</td>
+                <td>Sample Bank</td>
+                <td>1000</td>
+                <td>AC123</td>
+                <td>123 Sample Street</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../scripts/bank_ledger_creation.js"></script>
+</body>
+</html>

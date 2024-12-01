@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DII Items All Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/dii_items_all_statement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DII Items All Statement</h1>
+
+        <!-- Date Pickers -->
+        <div class="flex-row">
+            <div>
+                <label for="mtb_TDate">From Date</label>
+                <input type="date" id="mtb_TDate">
+            </div>
+            <div>
+                <label for="dateTimePicker1">To Date</label>
+                <input type="date" id="dateTimePicker1">
+            </div>
+        </div>
+
+        <!-- Year, Month, Day Inputs -->
+        <div class="flex-row">
+            <div>
+                <label for="txtYear1">Year 1</label>
+                <input type="number" id="txtYear1" placeholder="Year">
+            </div>
+            <div>
+                <label for="txtDay1">Day 1</label>
+                <input type="number" id="txtDay1" placeholder="Day">
+            </div>
+            <div>
+                <label for="txtMonth1">Month 1</label>
+                <input type="number" id="txtMonth1" placeholder="Month">
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div>
+                <label for="txtYear">Year</label>
+                <input type="number" id="txtYear" placeholder="Year">
+            </div>
+            <div>
+                <label for="txtDay">Day</label>
+                <input type="number" id="txtDay" placeholder="Day">
+            </div>
+            <div>
+                <label for="txtMonth">Month</label>
+                <input type="number" id="txtMonth" placeholder="Month">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <table id="dgvGrid">
+            <thead>
+                <tr>
+                    <th>Supplier Name</th>
+                    <th>In Qty</th>
+                    <th>In Rate</th>
+                    <th>In T Rate</th>
+                    <th>Debit</th>
+                    <th>Out Qty</th>
+                    <th>Out Rate</th>
+                    <th>Out T Rate</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically populated -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/dii_items_all_statement.js"></script>
+</body>
+</html>

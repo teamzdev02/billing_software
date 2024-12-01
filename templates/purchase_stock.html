@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Stock</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/purchase_stock.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase Stock</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton1">New</button>
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton3">Delete</button>
+            <button id="toolStripButton6">Close</button>
+        </div>
+
+        <!-- Stock Information Panel -->
+        <div class="stock-info">
+            <label for="txt_ino">Invoice No:</label>
+            <input type="text" id="txt_ino">
+
+            <label for="cmb_dcode">Dealer Code:</label>
+            <select id="cmb_dcode">
+                <option value="">Select Dealer</option>
+                <option value="D001">Dealer 1</option>
+                <option value="D002">Dealer 2</option>
+            </select>
+
+            <label for="dateTimePicker1">Entry Date:</label>
+            <input type="date" id="dateTimePicker1">
+
+            <label for="cbo_Category">Category:</label>
+            <select id="cbo_Category">
+                <option value="">Select Category</option>
+                <option value="Cat1">Category 1</option>
+                <option value="Cat2">Category 2</option>
+            </select>
+
+            <label for="cbo_Size">Size:</label>
+            <select id="cbo_Size">
+                <option value="">Select Size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+        </div>
+
+        <!-- Product Information Panel -->
+        <div class="product-info">
+            <label for="txt_qty">Quantity:</label>
+            <input type="number" id="txt_qty">
+
+            <label for="txt_rate">Rate:</label>
+            <input type="text" id="txt_rate">
+
+            <label for="txt_srate">Selling Rate:</label>
+            <input type="text" id="txt_srate">
+
+            <label for="txt_Discount">Discount:</label>
+            <input type="text" id="txt_Discount">
+
+            <label for="cmb_Margin">Margin:</label>
+            <select id="cmb_Margin">
+                <option value="">Select Margin</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+            </select>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="button3">Add Product</button>
+            <button id="button4">Remove Product</button>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="table-container">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Invoice No</th>
+                        <th>Dealer Code</th>
+                        <th>Entry Date</th>
+                        <th>Category</th>
+                        <th>Subcategory</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Selling Rate</th>
+                        <th>Margin</th>
+                        <th>Discount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress">
+            <label for="progressBar1">Progress:</label>
+            <progress id="progressBar1" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/purchase_stock.js"></script>
+</body>
+</html>

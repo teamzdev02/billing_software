@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Order Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/rpt_quotation_order_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quotation Order Statement</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h3>Filter Report</h3>
+            <form id="filterForm">
+                <div class="form-group">
+                    <label for="dateFrom">Date From:</label>
+                    <input type="date" id="dateFrom" name="dateFrom">
+                </div>
+                <div class="form-group">
+                    <label for="dateTo">Date To:</label>
+                    <input type="date" id="dateTo" name="dateTo">
+                </div>
+                <div class="form-group">
+                    <label for="quotationNo">Quotation Number:</label>
+                    <input type="text" id="quotationNo" name="quotationNo">
+                </div>
+                <div class="form-group">
+                    <label for="customer">Customer:</label>
+                    <input type="text" id="customer" name="customer">
+                </div>
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-section">
+            <h3>Quotation Order Report</h3>
+            <div id="crystalReportViewer">
+                <!-- Placeholder for the Crystal Report Viewer -->
+                <p>The quotation order report will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/rpt_quotation_order_statement.js"></script>
+</body>
+</html>

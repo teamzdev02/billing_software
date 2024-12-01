@@ -1,0 +1,15 @@
+/* Additional styling specific to Cash In Hand page */
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.grid table th {
+    background-color: #f0f0f0;
+}

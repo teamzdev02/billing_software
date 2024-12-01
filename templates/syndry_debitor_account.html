@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syndry Debitor Account</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/syndry_debitor_account.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Syndry Debitor Account</h1>
+        </header>
+
+        <div class="filter-section">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+
+            <button id="filterButton">Filter</button>
+        </div>
+
+        <div class="account-table">
+            <table id="accountTable">
+                <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Unit</th>
+                        <th>Make</th>
+                        <th>Column 4</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be populated here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <button id="exportButton">Export</button>
+        </footer>
+    </div>
+
+    <script src="../scripts/syndry_debitor_account.js"></script>
+</body>
+</html>

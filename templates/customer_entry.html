@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/customer_entry.css">
+    <title>Customer Entry</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Entry</h1>
+        <div class="toolbar">
+            <button id="btn_new">New</button>
+            <button id="btn_save">Save</button>
+            <button id="btn_modify">Modify</button>
+            <button id="btn_delete">Delete</button>
+            <button id="btn_exit">Exit</button>
+        </div>
+        <div class="flex-row">
+            <div class="form-column">
+                <label for="txt_ledgerno">Ledger No</label>
+                <input type="text" id="txt_ledgerno" placeholder="Enter Ledger No">
+                <label for="txt_ledgername">Ledger Name</label>
+                <input type="text" id="txt_ledgername" placeholder="Enter Ledger Name">
+                <label for="txt_address1">Address 1</label>
+                <input type="text" id="txt_address1" placeholder="Enter Address 1">
+                <!-- Additional Fields -->
+            </div>
+            <div class="grid-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>IsActive</th>
+                            <th>Ledger Name</th>
+                            <!-- Add Remaining Columns -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate rows via JS or server -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/customer_entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Toolbar Buttons Specific Styling */
+.toolbar button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Panel */
+.form-panel {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Checkboxes Group */
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+/* Progress Bar */
+progress {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+/* Data Grid Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

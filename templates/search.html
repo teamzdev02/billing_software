@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/search.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search</h1>
+        </header>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolButton6">Tool 6</button>
+            <button id="toolButton2">Tool 2</button>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <label for="category">Category:</label>
+            <select id="cmb_cat">
+                <option value="cat1">Category 1</option>
+                <option value="cat2">Category 2</option>
+            </select>
+
+            <label for="subcategory">Subcategory:</label>
+            <select id="cmb_subcat">
+                <option value="subcat1">Subcategory 1</option>
+                <option value="subcat2">Subcategory 2</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="checkBox1"> Filter Option
+            </label>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <label>Loading...</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
+        <!-- DataGrid Section -->
+        <div class="data-grid">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Unit</th>
+                        <th>Make</th>
+                        <th>Column 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/search.js"></script>
+</body>
+</html>

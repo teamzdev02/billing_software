@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/cancellation.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="newBtn">New</button>
+            <button id="saveBtn">Save</button>
+            <button id="deleteBtn">Delete</button>
+            <button id="closeBtn">Close</button>
+        </div>
+
+        <div class="panel">
+            <label for="textBox1">Field 1:</label>
+            <input type="text" id="textBox1">
+            
+            <label for="textBox2">Field 2:</label>
+            <input type="text" id="textBox2">
+
+            <label for="textBox3">Field 3:</label>
+            <input type="text" id="textBox3">
+
+            <label for="datePicker">Date:</label>
+            <input type="date" id="datePicker">
+        </div>
+
+        <div class="grid">
+            <table id="dataGrid">
+                <thead>
+                    <tr>
+                        <th>Invoice No</th>
+                        <th>Date</th>
+                        <th>Term</th>
+                        <th>Product</th>
+                        <th>SubProduct</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                        <th>MRP</th>
+                        <th>Total Rate</th>
+                        <th>Pack</th>
+                        <th>MFR</th>
+                        <th>Batch</th>
+                        <th>Expiry Date</th>
+                        <th>VAT</th>
+                        <th>VAT Amount</th>
+                        <th>Item Code</th>
+                        <th>Discount</th>
+                        <th>Customer Name</th>
+                        <th>Item Name</th>
+                        <th>Total Amount</th>
+                        <th>Grand Amount</th>
+                        <th>Disc%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows go here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="progress-bar-container">
+            <label for="progressBar">Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/cancellation.js"></script>
+</body>
+</html>

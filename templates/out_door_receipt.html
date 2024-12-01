@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Receipt</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/out_door_receipt.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Outdoor Receipt</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton5">Print</button>
+            <button id="toolStripButton6">Exit</button>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <div class="filter-row">
+                <label for="comboBox1">Filter By:</label>
+                <select id="comboBox1">
+                    <option value="Date Range">Date Range</option>
+                    <option value="Customer">Customer</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="dateTimePicker1">Start Date:</label>
+                <input type="date" id="dateTimePicker1">
+            </div>
+            <div class="filter-row">
+                <label for="dateTimePicker2">End Date:</label>
+                <input type="date" id="dateTimePicker2">
+            </div>
+            <div class="filter-row">
+                <label for="comboBox2">Customer:</label>
+                <select id="comboBox2">
+                    <option value="All">All Customers</option>
+                    <option value="Customer1">Customer 1</option>
+                    <option value="Customer2">Customer 2</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Radio Buttons Section -->
+        <div class="radio-buttons-section">
+            <h2>View Options</h2>
+            <div class="radio-row">
+                <input type="radio" id="radioButton1" name="viewOption" value="Summary" checked>
+                <label for="radioButton1">Summary</label>
+            </div>
+            <div class="radio-row">
+                <input type="radio" id="radioButton2" name="viewOption" value="Detailed">
+                <label for="radioButton2">Detailed</label>
+            </div>
+            <div class="radio-row">
+                <input type="radio" id="radioButton3" name="viewOption" value="Custom">
+                <label for="radioButton3">Custom</label>
+            </div>
+        </div>
+
+        <!-- Report Viewer -->
+        <div class="report-viewer">
+            <h2>Receipt Report</h2>
+            <div id="crystalReportViewer1" class="viewer">
+                <!-- Simulated Report Content -->
+                <p>Report content will appear here based on the selected options.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/out_door_receipt.js"></script>
+</body>
+</html>

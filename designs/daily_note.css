@@ -1,0 +1,68 @@
+/* daily_note.css */
+
+/* General styling */
+.container {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form input, .form select, .form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.data-grid {
+    margin-top: 30px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-grid th, .data-grid td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    text-align: center;
+}

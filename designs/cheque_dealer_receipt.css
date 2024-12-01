@@ -1,0 +1,39 @@
+/* Specific styling for Cheque Dealer Receipt page */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-section label,
+.form-section input,
+.form-section select {
+    margin-bottom: 10px;
+}
+
+.grid-section {
+    margin-top: 20px;
+}
+
+.grid-section table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grid-section th, .grid-section td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.toolbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}

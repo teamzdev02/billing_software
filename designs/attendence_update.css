@@ -1,0 +1,24 @@
+/* Button Group for Moving Items */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.button-group button {
+    width: 50px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Customize Table Containers */
+.attendance-tables {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.table-container {
+    flex: 1;
+}

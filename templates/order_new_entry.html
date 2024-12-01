@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order New Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/order_new_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order New Entry</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btn_new">New</button>
+            <button id="btn_save">Save</button>
+            <button id="btn_modify">Modify</button>
+            <button id="btn_delete">Delete</button>
+            <button id="btn_exit">Exit</button>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="flex-row">
+                <label for="txt_VrNo">Voucher No:</label>
+                <input type="text" id="txt_VrNo" placeholder="Enter Voucher No">
+            </div>
+            <div class="flex-row">
+                <label for="txt_Date">Date:</label>
+                <input type="date" id="txt_Date">
+            </div>
+            <div class="flex-row">
+                <label for="cmb_Type">Type:</label>
+                <select id="cmb_Type">
+                    <option value="Type1">Type 1</option>
+                    <option value="Type2">Type 2</option>
+                </select>
+            </div>
+            <div class="flex-row">
+                <label for="txt_LedgerName">Ledger Name:</label>
+                <input type="text" id="txt_LedgerName" placeholder="Enter Ledger Name">
+            </div>
+            <div class="flex-row">
+                <label for="Txt_Address">Address:</label>
+                <textarea id="Txt_Address" placeholder="Enter Address"></textarea>
+            </div>
+        </div>
+
+        <!-- Data Grid Section -->
+        <table id="dataGrid1">
+            <thead>
+                <tr>
+                    <th>Supplier Code</th>
+                    <th>Supplier</th>
+                    <th>Item Code</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+
+        <!-- Secondary Data Grid -->
+        <table id="dataGrid2">
+            <thead>
+                <tr>
+                    <th>Customer Code</th>
+                    <th>Sales To</th>
+                    <th>Sold Quantity</th>
+                    <th>Rate</th>
+                    <th>Received</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <div class="flex-row">
+                <label for="lbl_NetAmot">Net Amount:</label>
+                <span id="lbl_NetAmot">0.00</span>
+            </div>
+            <div class="flex-row">
+                <label for="lbl_Paid">Paid:</label>
+                <span id="lbl_Paid">0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/order_new_entry.js"></script>
+</body>
+</html>

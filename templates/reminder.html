@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/reminder.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Remainder</h1>
+
+        <!-- Date Section -->
+        <div class="date-section">
+            <label for="lbl_date">Date:</label>
+            <span id="lbl_date">[Dynamic Date Here]</span>
+        </div>
+
+        <!-- Remarks Section -->
+        <div class="remarks-section">
+            <label for="txt_Remarks">Remarks:</label>
+            <textarea id="txt_Remarks" rows="4" placeholder="Enter your remarks here..."></textarea>
+        </div>
+
+        <!-- Active Status -->
+        <div class="status-section">
+            <label for="checkBox1">Is Active:</label>
+            <input type="checkbox" id="checkBox1">
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button id="saveButton">Save</button>
+            <button id="clearButton">Clear</button>
+        </div>
+    </div>
+
+    <script src="../scripts/reminder.js"></script>
+</body>
+</html>

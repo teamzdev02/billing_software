@@ -1,0 +1,33 @@
+/* Specific styling for Customer All Statement page */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-section label,
+.filter-section input,
+.filter-section select {
+    margin-bottom: 10px;
+}
+
+.grid-section {
+    margin-top: 20px;
+}
+
+.grid-section table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grid-section th, .grid-section td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}

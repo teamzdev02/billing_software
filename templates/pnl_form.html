@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss Form</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/pnl_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profit and Loss Form</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton5">Save</button>
+            <button id="toolStripButton6">Exit</button>
+        </div>
+
+        <!-- Date Range Selector -->
+        <div class="date-range">
+            <label for="dateTimePicker1">Start Date:</label>
+            <input type="date" id="dateTimePicker1">
+            <label for="dateTimePicker2">End Date:</label>
+            <input type="date" id="dateTimePicker2">
+        </div>
+
+        <!-- Split Container -->
+        <div class="split-container">
+            <div class="panel">
+                <h3>Financial Overview</h3>
+                <p><strong>Opening Stock (OS):</strong> <span id="Lbl_OS">0</span></p>
+                <p><strong>Purchases (PS):</strong> <span id="Lbl_PS">0</span></p>
+                <p><strong>Closing Stock (CS):</strong> <span id="Lbl_CS">0</span></p>
+                <p><strong>Direct Expenses (DE):</strong> <span id="Lbl_DE">0</span></p>
+            </div>
+            <div class="panel">
+                <h3>Profit & Loss</h3>
+                <p><strong>Gross Profit (GP):</strong> <span id="Lbl_SGP">0</span></p>
+                <p><strong>Indirect Expenses (IDE):</strong> <span id="Lbl_IDE">0</span></p>
+                <p><strong>Net Profit (NP):</strong> <span id="Lbl_NP">0</span></p>
+                <p><strong>Sales (SS):</strong> <span id="Lbl_SS">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/pnl_form.js"></script>
+</body>
+</html>

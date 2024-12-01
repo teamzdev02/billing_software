@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/invoice_statement1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Statement</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <!-- ComboBox Filter -->
+            <div class="filter-group">
+                <label for="comboBox1">Filter by:</label>
+                <select id="comboBox1">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                </select>
+            </div>
+
+            <!-- TextBox Filters -->
+            <div class="filter-group">
+                <label for="textBox1">Field 1:</label>
+                <input type="text" id="textBox1">
+            </div>
+            <div class="filter-group">
+                <label for="textBox2">Field 2:</label>
+                <input type="text" id="textBox2">
+            </div>
+
+            <!-- Date Picker -->
+            <div class="filter-group">
+                <label for="datePicker1">Select Date:</label>
+                <input type="date" id="datePicker1">
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button id="filterButton">Filter</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <table id="dataGrid">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <button id="printButton">Print</button>
+            <button id="exportButton">Export</button>
+        </div>
+    </div>
+
+    <script src="../scripts/invoice_statement1.js"></script>
+</body>
+</html>

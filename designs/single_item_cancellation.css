@@ -1,0 +1,78 @@
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+.input-panel, .date-panel {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-panel .row, .date-panel .row {
+    margin-bottom: 10px;
+    flex: 1 1 45%;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-grid table th, .data-grid table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-grid table th {
+    background-color: #f4f4f4;
+}
+
+.progress-bar {
+    margin-top: 20px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}

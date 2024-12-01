@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items All Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/ii_items_all_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Items All Statement</h1>
+        </header>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <div class="date-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="date-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <table id="itemsTable">
+                <thead>
+                    <tr>
+                        <th>Supplier Name</th>
+                        <th>In Quantity</th>
+                        <th>In Rate</th>
+                        <th>In Total Rate</th>
+                        <th>Debit</th>
+                        <th>Out Quantity</th>
+                        <th>Out Rate</th>
+                        <th>Out Total Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr>
+                        <td>Supplier A</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>1000</td>
+                    </tr>
+                    <!-- More rows will be dynamically added -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button id="loadData" class="action-button">Load Data</button>
+            <button id="exportData" class="action-button">Export to Excel</button>
+        </div>
+    </div>
+
+    <script src="../scripts/ii_items_all_statement.js"></script>
+</body>
+</html>

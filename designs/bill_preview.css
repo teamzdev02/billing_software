@@ -1,0 +1,83 @@
+/* Bill Preview Styles */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.customer-info label {
+    font-weight: bold;
+    grid-column: span 1;
+}
+
+.customer-info input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    grid-column: span 3;
+}
+
+.data-grid {
+    margin-bottom: 20px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-grid th,
+.data-grid td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.data-grid th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+}

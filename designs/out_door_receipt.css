@@ -1,0 +1,55 @@
+/* Additional styles specific to the Outdoor Receipt page */
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Filters Section */
+.filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.filters-section .filter-row {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.filters-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Radio Buttons Section */
+.radio-buttons-section {
+    margin-top: 20px;
+}
+
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Report Viewer */
+.report-viewer {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.viewer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}

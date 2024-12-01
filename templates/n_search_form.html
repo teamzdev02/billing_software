@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/n_search_form.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" id="linkLabel" class="link-label">Link Text</a>
+
+        <div class="filter-container">
+            <label for="filterText" id="lblColumn">Column Filter:</label>
+            <input type="text" id="filterText" class="form-control" placeholder="Filter...">
+        </div>
+
+        <table id="gvSearch" class="data-table">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/n_search_form.js"></script>
+</body>
+</html>

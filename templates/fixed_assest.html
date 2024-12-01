@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Asset</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/fixed_assest.css"> <!-- Fixed Asset Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Fixed Asset Management</h1>
+
+        <!-- Date Filters -->
+        <div class="date-filters">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="addEntry">Add Asset</button>
+            <button id="deleteEntry">Delete Selected</button>
+            <button id="clearEntries">Clear All</button>
+        </div>
+
+        <!-- Data Table -->
+        <table id="assetTable">
+            <thead>
+                <tr>
+                    <th>Asset ID</th>
+                    <th>Account Name</th>
+                    <th>Type</th>
+                    <th>Details</th>
+                    <th>Unit</th>
+                    <th>Make</th>
+                    <th>Additional Info</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/fixed_assest.js"></script> <!-- Fixed Asset Specific JS -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Summary</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../scripts/bill_summary.js">
+</head>
+<body>
+<div class="container">
+    <h1>Bill Summary</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <form id="filterForm">
+            <label for="txt_Group">Group:</label>
+            <input type="text" id="txt_Group" placeholder="Enter group name">
+
+            <label for="txt_Ledger">Ledger:</label>
+            <input type="text" id="txt_Ledger" placeholder="Enter ledger code">
+
+            <label for="txt_LedgerName">Ledger Name:</label>
+            <input type="text" id="txt_LedgerName" placeholder="Enter ledger name">
+
+            <label for="mtb_FDate">From Date:</label>
+            <input type="date" id="mtb_FDate">
+
+            <label for="mtb_TDate">To Date:</label>
+            <input type="date" id="mtb_TDate">
+
+            <button type="submit" id="searchBtn">Search</button>
+        </form>
+    </div>
+
+    <!-- Bill Summary Data Grid -->
+    <div class="data-grid">
+        <table id="billSummaryTable">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Code</th>
+                <th>Ledger No</th>
+                <th>Ledger Name</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2024-01-01</td>
+                <td>001</td>
+                <td>1001</td>
+                <td>Sample Ledger</td>
+                <td>$1000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../scripts/bill_summary.js"></script>
+</body>
+</html>

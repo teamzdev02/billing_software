@@ -1,0 +1,22 @@
+/* Specific styling for CBDenomination page */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+form .additional-info {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}

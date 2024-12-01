@@ -1,0 +1,52 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.group-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.group-box h2 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}

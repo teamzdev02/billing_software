@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items All Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/i_items_all_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Items All Statement</h1>
+        </header>
+
+        <!-- Date Picker Section -->
+        <div class="date-picker">
+            <label for="datePicker">Select Date:</label>
+            <input type="date" id="datePicker">
+        </div>
+
+        <!-- DataGrid Section -->
+        <div class="data-grid">
+            <table id="itemsTable">
+                <thead>
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Button -->
+        <div class="actions">
+            <button id="generateReport" class="action-button">Generate Report</button>
+        </div>
+    </div>
+
+    <script src="../scripts/i_items_all_statement.js"></script>
+</body>
+</html>

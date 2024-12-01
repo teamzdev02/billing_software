@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type 2 Bill</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/type2_bill.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Type 2 Bill</h1>
+        <div class="form-container">
+            <form id="type2BillForm">
+                <!-- Bill Details -->
+                <div class="form-group">
+                    <label for="txt_trate">Transaction Rate</label>
+                    <input type="text" id="txt_trate" name="txt_trate">
+                </div>
+                <div class="form-group">
+                    <label for="txt_srate">Sale Rate</label>
+                    <input type="text" id="txt_srate" name="txt_srate">
+                </div>
+                <div class="form-group">
+                    <label for="txt_rate">Rate</label>
+                    <input type="text" id="txt_rate" name="txt_rate">
+                </div>
+                <div class="form-group">
+                    <label for="txt_qty">Quantity</label>
+                    <input type="text" id="txt_qty" name="txt_qty">
+                </div>
+
+                <!-- Discount and Additional Info -->
+                <div class="form-group">
+                    <label for="txt_discount">Discount</label>
+                    <input type="text" id="txt_discount" name="txt_discount">
+                </div>
+                <div class="form-group">
+                    <label for="txt_rbal">Remaining Balance</label>
+                    <input type="text" id="txt_rbal" name="txt_rbal">
+                </div>
+                <div class="form-group">
+                    <label for="txtcode">Code</label>
+                    <input type="text" id="txtcode" name="txtcode">
+                </div>
+
+                <!-- Date and Additional Inputs -->
+                <div class="form-group">
+                    <label for="dateTimePicker3">Date</label>
+                    <input type="date" id="dateTimePicker3" name="dateTimePicker3">
+                </div>
+                <div class="form-group">
+                    <label for="cmb_cat">Category</label>
+                    <select id="cmb_cat" name="cmb_cat">
+                        <option value="cat1">Category 1</option>
+                        <option value="cat2">Category 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_subcat">Sub Category</label>
+                    <select id="cmb_subcat" name="cmb_subcat">
+                        <option value="subcat1">Sub Category 1</option>
+                        <option value="subcat2">Sub Category 2</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="progress-container">
+            <label for="progressBar1">Progress</label>
+            <progress id="progressBar1" value="0" max="100"></progress>
+        </div>
+
+        <div class="data-grid-container">
+            <table id="dataGrid">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>SubCategory</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Discount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/type2_bill.js"></script>
+</body>
+</html>

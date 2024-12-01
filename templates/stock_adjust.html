@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Adjust</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/stock_adjust.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Adjustment</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnSave">Save</button>
+            <button id="btnPrint">Print</button>
+            <button id="btnClose">Close</button>
+        </div>
+
+        <!-- Input Panel -->
+        <div class="input-panel">
+            <div class="row">
+                <label for="txt_Product">Product:</label>
+                <input type="text" id="txt_Product">
+            </div>
+            <div class="row">
+                <label for="txt_SubProduct">Sub Product:</label>
+                <input type="text" id="txt_SubProduct">
+            </div>
+            <div class="row">
+                <label for="txt_MFR">Manufacturer (MFR):</label>
+                <input type="text" id="txt_MFR">
+            </div>
+            <div class="row">
+                <label for="txt_Pack">Pack:</label>
+                <input type="text" id="txt_Pack">
+            </div>
+            <div class="row">
+                <label for="txt_NoOfItems">Number of Items:</label>
+                <input type="number" id="txt_NoOfItems">
+            </div>
+            <div class="row">
+                <label for="txt_BasicRate">Basic Rate:</label>
+                <input type="text" id="txt_BasicRate">
+            </div>
+            <div class="row">
+                <label for="txt_PurchaseRate">Purchase Rate:</label>
+                <input type="text" id="txt_PurchaseRate">
+            </div>
+            <div class="row">
+                <label for="txt_AddQty">Adjust Quantity:</label>
+                <input type="number" id="txt_AddQty">
+            </div>
+            <div class="row">
+                <label>Adjustment Type:</label>
+                <div>
+                    <label><input type="radio" name="adjustType" id="radio_Add" value="Add" checked> Add</label>
+                    <label><input type="radio" name="adjustType" id="radio_Remove" value="Remove"> Remove</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/stock_adjust.js"></script>
+</body>
+</html>

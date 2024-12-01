@@ -1,0 +1,21 @@
+/* turnover.css */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.report-viewer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#crystalReportViewer1 {
+    min-height: 400px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+    border: 1px dashed #bbb;
+    font-size: 18px;
+    color: #333;
+}

@@ -1,0 +1,21 @@
+/* Specific styling for Category page */
+.toolbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.category-form input {
+    width: 200px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

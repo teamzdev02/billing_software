@@ -1,0 +1,55 @@
+/* Additional styles specific to the Out Time page */
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Date Picker */
+.date-picker {
+    margin: 20px 0;
+}
+
+.date-picker label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* ListBox Section */
+.listbox-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.listbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listbox-container h3 {
+    margin-bottom: 10px;
+}
+
+#lst_available,
+#lst_present {
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+}
+
+.listbox-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listbox-controls button {
+    padding: 5px 10px;
+    font-size: 16px;
+}

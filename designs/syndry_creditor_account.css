@@ -1,0 +1,53 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-section input,
+.filter-section button {
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.account-table {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#accountTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#accountTable th, #accountTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#exportButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}

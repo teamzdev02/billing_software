@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Invoice Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/si_invoice_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SI Invoice Statement</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnPreview">Preview</button>
+            <button id="btnPrint">Print</button>
+        </div>
+
+        <!-- Date Filters -->
+        <div class="date-filters">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+            
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+        </div>
+
+        <!-- Group Selection -->
+        <div class="group-selection">
+            <label for="group">Select Group:</label>
+            <select id="group">
+                <option value="group1">Group 1</option>
+                <option value="group2">Group 2</option>
+                <option value="group3">Group 3</option>
+            </select>
+        </div>
+
+        <!-- Report Viewer -->
+        <div class="report-viewer">
+            <iframe id="reportFrame" title="Report Viewer"></iframe>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="radio-options">
+            <label>Options:</label>
+            <input type="radio" id="option1" name="options" value="option1" checked>
+            <label for="option1">Option 1</label>
+            
+            <input type="radio" id="option2" name="options" value="option2">
+            <label for="option2">Option 2</label>
+            
+            <input type="radio" id="option3" name="options" value="option3">
+            <label for="option3">Option 3</label>
+        </div>
+
+        <!-- Code and Additional Info -->
+        <div class="additional-info">
+            <label for="code">Code:</label>
+            <input type="text" id="code" placeholder="Enter code">
+
+            <label for="count">Count:</label>
+            <span id="count">0</span>
+        </div>
+    </div>
+
+    <script src="../scripts/si_invoice_statement.js"></script>
+</body>
+</html>

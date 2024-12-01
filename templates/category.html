@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Management</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/category.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="addBtn">Add</button>
+            <button id="editBtn">Edit</button>
+            <button id="deleteBtn">Delete</button>
+            <button id="saveBtn">Save</button>
+            <button id="refreshBtn">Refresh</button>
+        </div>
+
+        <div class="category-form">
+            <label for="mcode">Category Code:</label>
+            <input type="text" id="mcode" placeholder="Enter category code">
+
+            <label for="mname">Category Name:</label>
+            <input type="text" id="mname" placeholder="Enter category name">
+
+            <div class="active-status">
+                <label for="isActive">Is Active:</label>
+                <input type="checkbox" id="isActive">
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <label for="progress">Loading...</label>
+            <progress id="progress" max="100" value="0"></progress>
+        </div>
+
+        <div class="category-grid">
+            <table id="categoryTable">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Category Name</th>
+                        <th>Is Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/category.js"></script>
+</body>
+</html>

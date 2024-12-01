@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Time Management</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/in_time.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>In-Time Management</h1>
+        </header>
+
+        <!-- Date Picker Section -->
+        <div class="date-picker">
+            <label for="datePicker">Select Date:</label>
+            <input type="date" id="datePicker">
+        </div>
+
+        <!-- Morning and Afternoon Selection -->
+        <div class="time-selection">
+            <div class="time-group">
+                <label for="morning">Morning:</label>
+                <select id="morning" class="time-select">
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                </select>
+            </div>
+            <div class="time-group">
+                <label for="afternoon">Afternoon:</label>
+                <select id="afternoon" class="time-select">
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- List Boxes for Present and Available -->
+        <div class="list-container">
+            <div class="list-group">
+                <h3>Available</h3>
+                <ul id="availableList" class="list-box">
+                    <!-- List items will be added here dynamically -->
+                </ul>
+                <button id="moveAllRight" class="move-button">Move All →</button>
+                <button id="moveSingleRight" class="move-button">Move Single →</button>
+            </div>
+
+            <div class="list-group">
+                <h3>Present</h3>
+                <ul id="presentList" class="list-box">
+                    <!-- List items will be added here dynamically -->
+                </ul>
+                <button id="moveAllLeft" class="move-button">← Move All</button>
+                <button id="moveSingleLeft" class="move-button">← Move Single</button>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button id="exitButton" class="action-button">Exit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/in_time.js"></script>
+</body>
+</html>

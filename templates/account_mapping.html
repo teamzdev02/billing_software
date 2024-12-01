@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Mapping</title>
+        <link rel="stylesheet" href="../designs/common.css">
+        <link rel="stylesheet" href="../designs/account_mapping.css">
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <script src="../scripts/account_mapping.js" defer></script>
+    </head>
+    <body>
+    <div class="container" x-data="accountMapping()">
+        <div><h1>Account Mapping</h1></div>
+
+        <!-- Account Information Panel -->
+        <div class="panel">
+            <label for="accName">Account Name:</label>
+            <select id="accName" x-model="accName">
+                <option value="">Select Account Name</option>
+                <option>Account 1</option>
+                <option>Account 2</option>
+            </select>
+
+            <label for="accType">Account Type:</label>
+            <select id="accType" x-model="accType">
+                <option value="">Select Account Type</option>
+                <option>Type 1</option>
+                <option>Type 2</option>
+            </select>
+
+            <label for="openingBalance">Opening Balance:</label>
+            <input type="number" id="openingBalance" x-model="openingBalance">
+
+            <label for="narration">Narration:</label>
+            <input type="text" id="narration" x-model="narration">
+        </div>
+
+        <!-- Tool Buttons -->
+        <div class="toolbar">
+            <button @click="save()">Save</button>
+            <button @click="edit()">Edit</button>
+            <button @click="delete()">Delete</button>
+        </div>
+
+        <!-- Balance Type Selection -->
+        <fieldset>
+            <legend>Balance Type</legend>
+            <label><input type="radio" value="Credit" x-model="balanceType"> Credit</label>
+            <label><input type="radio" value="Debit" x-model="balanceType"> Debit</label>
+        </fieldset>
+
+        <!-- Product Information -->
+        <fieldset>
+            <legend>Product Details</legend>
+
+            <label for="brandName">Brand Name:</label>
+            <select id="brandName" x-model="brandName">
+                <option value="">Select Brand</option>
+                <option>Brand 1</option>
+                <option>Brand 2</option>
+            </select>
+
+            <label for="productName">Product Name:</label>
+            <select id="productName" x-model="productName">
+                <option value="">Select Product</option>
+                <option>Product 1</option>
+                <option>Product 2</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select id="category" x-model="category">
+                <option value="">Select Category</option>
+                <option>Category 1</option>
+                <option>Category 2</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" x-model="size">
+                <option value="">Select Size</option>
+                <option>Size 1</option>
+                <option>Size 2</option>
+            </select>
+        </fieldset>
+
+        <!-- Progress Bar -->
+        <label for="progress">Progress:</label>
+        <progress id="progress" max="100" x-bind:value="progress"></progress>
+    </div>
+    </body>
+    </html>

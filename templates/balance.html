@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Management</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/balance.css">
+</head>
+<body>
+<div class="container">
+    <h1>Balance Management</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button id="toolAdd">Add</button>
+        <button id="toolUpdate">Update</button>
+        <button id="toolDelete">Delete</button>
+        <button id="toolExport">Export</button>
+    </div>
+
+    <!-- Category and Date Filter -->
+    <div class="filter-section">
+        <label for="cmb_cat">Category:</label>
+        <select id="cmb_cat">
+            <option value="Category 1">Category 1</option>
+            <option value="Category 2">Category 2</option>
+        </select>
+
+        <label for="dateFrom">From:</label>
+        <input type="date" id="dateFrom">
+
+        <label for="dateTo">To:</label>
+        <input type="date" id="dateTo">
+
+        <label>
+            <input type="checkbox" id="filterDebtCredit"> Show only with debt/credit
+        </label>
+    </div>
+
+    <!-- Balance Data Table -->
+    <table id="balanceTable">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Debt</th>
+                <th>Credit</th>
+                <th>Code</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically loaded here -->
+        </tbody>
+    </table>
+
+    <!-- Summary Section -->
+    <div class="summary-section">
+        <label>Total Balance: </label>
+        <span id="lbl_Total">0</span>
+
+        <label>Total Credit: </label>
+        <span id="lbl_CreditAmt">0</span>
+
+        <label>Total Debt: </label>
+        <span id="lbl_Debt">0</span>
+    </div>
+
+    <progress id="progressBar" value="0" max="100"></progress>
+</div>
+
+<script src="../scripts/balance.js"></script>
+</body>
+</html>

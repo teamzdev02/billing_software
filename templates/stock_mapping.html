@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Mapping</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/stock_mapping.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Mapping</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnNew">New</button>
+            <button id="btnSave">Save</button>
+            <button id="btnDelete">Delete</button>
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+            <button id="btnPrint">Print</button>
+            <button id="btnClose">Close</button>
+        </div>
+
+        <!-- Input Panel -->
+        <div class="input-panel">
+            <div class="row">
+                <label for="cbomake">Make:</label>
+                <select id="cbomake">
+                    <option value="">Select</option>
+                    <option value="Make1">Make1</option>
+                    <option value="Make2">Make2</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="cbo_Category">Category:</label>
+                <select id="cbo_Category">
+                    <option value="">Select</option>
+                    <option value="Category1">Category1</option>
+                    <option value="Category2">Category2</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="cboSubCatagory">Sub Category:</label>
+                <select id="cboSubCatagory">
+                    <option value="">Select</option>
+                    <option value="SubCategory1">SubCategory1</option>
+                    <option value="SubCategory2">SubCategory2</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="txt_Mcode">M-Code:</label>
+                <input type="text" id="txt_Mcode">
+            </div>
+            <div class="row">
+                <label for="txt_Barcode">Barcode:</label>
+                <input type="text" id="txt_Barcode">
+            </div>
+            <div class="row">
+                <label for="txt_PurchaseRate">Purchase Rate:</label>
+                <input type="text" id="txt_PurchaseRate">
+            </div>
+            <div class="row">
+                <label for="txt_SalesRate">Sales Rate:</label>
+                <input type="text" id="txt_SalesRate">
+            </div>
+            <div class="row">
+                <label for="cmb_Margin">Margin:</label>
+                <select id="cmb_Margin">
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="cmb_DrDis">Doctor Discount:</label>
+                <select id="cmb_DrDis">
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="cmb_Vat">VAT:</label>
+                <select id="cmb_Vat">
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="isActive">Active:</label>
+                <input type="checkbox" id="isActive">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table id="stockTable">
+                <thead>
+                    <tr>
+                        <th>Column1</th>
+                        <th>TagNo</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+                        <th>MFR</th>
+                        <th>Make</th>
+                        <th>Purchase Rate</th>
+                        <th>Rate</th>
+                        <th>Qty</th>
+                        <th>Selling Rate</th>
+                        <th>Doctor Discount</th>
+                        <th>VAT</th>
+                        <th>Column4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <label>Progress:</label>
+            <progress id="progressBar" max="100" value="0"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/stock_mapping.js"></script>
+</body>
+</html>

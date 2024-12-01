@@ -1,0 +1,67 @@
+/* Menu Styles */
+.menu-bar {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.menu-item > a:hover {
+    background-color: #007bff;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    background-color: #444;
+}
+
+.submenu li a:hover {
+    background-color: #0056b3;
+}
+
+/* Show submenu on hover */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Styling for active states */
+.menu-item > a.active, .submenu li a.active {
+    background-color: #0056b3;
+}

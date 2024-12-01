@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/credit_book.css">
+    <title>Credit Book</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Book</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnView">View Report</button>
+            <button id="btnClose">Close</button>
+        </div>
+
+        <!-- Date Range Selection -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="flex-column">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <!-- Report Viewer -->
+        <div class="report-viewer">
+            <iframe id="reportFrame" title="Credit Report Viewer"></iframe>
+        </div>
+    </div>
+    <script src="../scripts/credit_book.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/grap_n_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Graph Statement Viewer</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="pageSetup" class="toolbar-button">Page Setup</button>
+            <button id="print" class="toolbar-button">Print</button>
+        </div>
+
+        <!-- Filters Panel -->
+        <div class="filters">
+            <div class="date-filter">
+                <label for="fromDate">From:</label>
+                <input type="date" id="fromDate">
+                <label for="toDate">To:</label>
+                <input type="date" id="toDate">
+            </div>
+
+            <div class="report-type">
+                <label>Report Type:</label>
+                <label><input type="radio" name="reportType" value="Summary" checked> Summary</label>
+                <label><input type="radio" name="reportType" value="Detailed"> Detailed</label>
+            </div>
+        </div>
+
+        <!-- Crystal Report Viewer -->
+        <div id="reportViewer" class="report-viewer">
+            <p>Report will be displayed here...</p>
+        </div>
+    </div>
+
+    <script src="../scripts/grap_n_statement.js"></script>
+</body>
+</html>

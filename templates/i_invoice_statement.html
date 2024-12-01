@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/i_invoice_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Statement</h1>
+        </header>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <div class="date-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="date-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+            </div>
+
+            <div class="dropdown-group">
+                <label for="invoiceType">Invoice Type:</label>
+                <select id="invoiceType">
+                    <option value="all">All</option>
+                    <option value="paid">Paid</option>
+                    <option value="unpaid">Unpaid</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Radio Buttons Section -->
+        <div class="radio-buttons">
+            <label>Select View Type:</label>
+            <div>
+                <input type="radio" id="summary" name="viewType" value="summary" checked>
+                <label for="summary">Summary</label>
+            </div>
+            <div>
+                <input type="radio" id="detailed" name="viewType" value="detailed">
+                <label for="detailed">Detailed</label>
+            </div>
+            <div>
+                <input type="radio" id="custom" name="viewType" value="custom">
+                <label for="custom">Custom</label>
+            </div>
+        </div>
+
+        <!-- Report Viewer Section -->
+        <div class="report-viewer">
+            <iframe id="reportFrame" src="about:blank" title="Report Viewer"></iframe>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button id="loadReport" class="action-button">Load Report</button>
+            <button id="printReport" class="action-button">Print Report</button>
+            <button id="exportReport" class="action-button">Export to PDF</button>
+        </div>
+    </div>
+
+    <script src="../scripts/i_invoice_statement.js"></script>
+</body>
+</html>

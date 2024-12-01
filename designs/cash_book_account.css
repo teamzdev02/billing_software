@@ -1,0 +1,23 @@
+.container {
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.toolbar button {
+    margin-right: 10px;
+}
+
+.date-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    overflow-x: auto;
+}

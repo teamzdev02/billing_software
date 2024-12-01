@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/receipt_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Entry</h1>
+
+        <!-- Date and Day -->
+        <div class="date-section">
+            <label for="mtb_Date">Date:</label>
+            <input type="date" id="mtb_Date">
+            <span id="lbl_Weakday">[Day]</span>
+        </div>
+
+        <!-- Entry Form -->
+        <div class="form-section">
+            <div class="group-box">
+                <h2>Voucher Details</h2>
+                <label for="txt_VrNo">Voucher Number:</label>
+                <input type="text" id="txt_VrNo">
+
+                <label for="cmb_Group">Group:</label>
+                <select id="cmb_Group">
+                    <option value="group1">Group 1</option>
+                    <option value="group2">Group 2</option>
+                    <!-- Add other groups dynamically if needed -->
+                </select>
+
+                <label for="txt_LedgerName">Ledger Name:</label>
+                <input type="text" id="txt_LedgerName">
+            </div>
+
+            <div class="group-box">
+                <h2>Transaction Details</h2>
+                <label for="txt_Debt">Debit:</label>
+                <input type="number" id="txt_Debt" step="0.01">
+
+                <label for="txt_Credit">Credit:</label>
+                <input type="number" id="txt_Credit" step="0.01">
+
+                <label for="txt_Nar1">Narration 1:</label>
+                <textarea id="txt_Nar1"></textarea>
+
+                <label for="txt_Nar2">Narration 2:</label>
+                <textarea id="txt_Nar2"></textarea>
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <h2>Receipts</h2>
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Narration</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Additional Details -->
+        <div class="additional-details">
+            <label for="txtmonth">Month:</label>
+            <input type="text" id="txtmonth">
+
+            <label for="txtDay">Day:</label>
+            <input type="text" id="txtDay">
+
+            <label for="txtYear">Year:</label>
+            <input type="text" id="txtYear">
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button id="addRow">Add Row</button>
+            <button id="clearForm">Clear Form</button>
+        </div>
+    </div>
+
+    <script src="../scripts/receipt_entry.js"></script>
+</body>
+</html>

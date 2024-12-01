@@ -1,0 +1,207 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure html and body take up the full height */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Label and Form Elements */
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Flex Layouts */
+.flex-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Selection Highlight */
+.selected {
+    background-color: #d3e4ff;
+}
+
+/* Ensure the form elements resize appropriately on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 15px;
+        width: 100%;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Enhanced Button Styling for better UX */
+button:active {
+    background-color: #003366;
+}
+
+/* Input Fields Focus State */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Table Hover State for better visual feedback */
+table tbody tr:hover {
+    background-color: #e1f5ff;
+}
+
+/* Table Cell Padding Enhancement */
+th, td {
+    padding: 12px 16px;
+}
+
+/* Header Styling with Margin Adjustment */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+}
+
+/* Smooth Transition for Hover States */
+button, table tbody tr:hover {
+    transition: all 0.3s ease;
+}
+
+/* Placeholder Text Styling */
+input::placeholder, textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Add Border Radius to Table Cells */
+th, td {
+    border-radius: 6px;
+}
+
+/* Tooltips for Additional Information (can be used in form fields) */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}

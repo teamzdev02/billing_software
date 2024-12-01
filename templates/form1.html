@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1 - Ledger Management</title>
+    <link rel="stylesheet" href="../designs/form1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ledger Management</h1>
+        
+        <!-- Search Section -->
+        <div class="search-section">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search Ledger...">
+        </div>
+        
+        <!-- Ledger Entry Form -->
+        <div class="form-section">
+            <label for="ledgerName">Ledger Name:</label>
+            <input type="text" id="ledgerName" placeholder="Enter Ledger Name">
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Item Name</th>
+                    </tr>
+                </thead>
+                <tbody id="gridBody">
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Toolbar Buttons -->
+        <div class="toolbar">
+            <button id="newEntry">New</button>
+            <button id="saveEntry">Save</button>
+            <button id="modifyEntry">Modify</button>
+            <button id="deleteEntry">Delete</button>
+            <button id="exitApp">Exit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/form1.js"></script>
+</body>
+</html>

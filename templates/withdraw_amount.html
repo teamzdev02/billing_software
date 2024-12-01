@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw Amount</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/withdraw_amount.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Withdraw Amount</h1>
+
+        <!-- ToolStrip with Buttons -->
+        <div class="tool-strip">
+            <button id="toolButton1">Button 1</button>
+            <button id="toolButton2">Button 2</button>
+            <button id="toolButton6">Button 6</button>
+        </div>
+
+        <!-- Input Form -->
+        <div class="input-form">
+            <div class="input-group">
+                <label for="txt_Amount">Amount:</label>
+                <input type="text" id="txt_Amount">
+            </div>
+            <div class="input-group">
+                <label for="txt_LoanAmount">Loan Amount:</label>
+                <input type="text" id="txt_LoanAmount">
+            </div>
+            <div class="input-group">
+                <label for="txt_interest">Interest:</label>
+                <input type="text" id="txt_interest">
+            </div>
+            <div class="input-group">
+                <label for="txt_Bal">Balance:</label>
+                <input type="text" id="txt_Bal">
+            </div>
+            <div class="input-group">
+                <label for="cbo_Labourexpenses">Labour Expenses:</label>
+                <select id="cbo_Labourexpenses">
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="cbo_otherexpense">Other Expenses:</label>
+                <select id="cbo_otherexpense">
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="txt_Remarks">Remarks:</label>
+                <input type="text" id="txt_Remarks">
+            </div>
+            <div class="input-group">
+                <label for="txt_Naration">Narration:</label>
+                <input type="text" id="txt_Naration">
+            </div>
+            <div class="input-group">
+                <label for="cmb_AccountNo">Account No:</label>
+                <select id="cmb_AccountNo">
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="radio-buttons">
+            <label>Select Option:</label>
+            <div>
+                <input type="radio" id="radioButton1" name="radioOption"> Option 1
+                <input type="radio" id="radioButton2" name="radioOption"> Option 2
+                <input type="radio" id="radioButton3" name="radioOption"> Option 3
+                <input type="radio" id="radioButton4" name="radioOption"> Option 4
+                <input type="radio" id="radioButton5" name="radioOption"> Option 5
+                <input type="radio" id="radioButton6" name="radioOption"> Option 6
+                <input type="radio" id="radioButton7" name="radioOption"> Option 7
+                <input type="radio" id="radioButton8" name="radioOption"> Option 8
+                <input type="radio" id="radioButton9" name="radioOption"> Option 9
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/withdraw_amount.js"></script>
+</body>
+</html>

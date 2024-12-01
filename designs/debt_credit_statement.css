@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form and tables */
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form Group for inputs and labels */
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+}
+
+.filter-group input,
+.filter-group select,
+.filter-group button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.filter-group button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Report Viewer */
+#reportViewer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#reportViewer h2 {
+    margin-top: 0;
+}
+
+/* Buttons for generating and printing the report */
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .filter-group {
+        flex-direction: column;
+    }
+
+    .filter-group input,
+    .filter-group select,
+    .filter-group button {
+        width: 100%;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}

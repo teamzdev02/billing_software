@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Ledger</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/expenses_ledger.css"> <!-- Expenses Ledger Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Expenses Ledger</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <label for="mCode">M-Code:</label>
+            <input type="text" id="mCode" placeholder="Enter M-Code">
+
+            <label for="remark">Remark:</label>
+            <input type="text" id="remark" placeholder="Enter Remark">
+
+            <label for="otherDetails">Other Details:</label>
+            <input type="text" id="otherDetails" placeholder="Additional Information">
+
+            <label for="isActive">Is Active:</label>
+            <input type="checkbox" id="isActive">
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="addEntry">Add Entry</button>
+            <button id="deleteEntry">Delete Selected</button>
+            <button id="clearEntries">Clear All</button>
+        </div>
+
+        <!-- Data Table -->
+        <table id="ledgerTable">
+            <thead>
+                <tr>
+                    <th>Ref No</th>
+                    <th>Ledger Name</th>
+                    <th>Type</th>
+                    <th>Remarks</th>
+                    <th>Details</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added -->
+            </tbody>
+        </table>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <label for="progressBar">Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/expenses_ledger.js"></script> <!-- Expenses Ledger Specific JS -->
+</body>
+</html>

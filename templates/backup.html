@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Backup</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/backup.css">
+</head>
+<body>
+<div class="container">
+    <h1>Database Backup</h1>
+
+    <!-- Server Information Panel -->
+    <div id="server-info" class="panel">
+        <label for="txtServer">Server:</label>
+        <input type="text" id="txtServer" name="txtServer" placeholder="Enter Server Name">
+
+        <label for="txtUsername">Username:</label>
+        <input type="text" id="txtUsername" name="txtUsername" placeholder="Enter Username">
+
+        <label for="txtPassword">Password:</label>
+        <input type="password" id="txtPassword" name="txtPassword" placeholder="Enter Password">
+
+        <label>
+            <input type="checkbox" id="saveCredentials"> Remember Credentials
+        </label>
+    </div>
+
+    <!-- Backup Options Panel -->
+    <div id="backup-options" class="panel">
+        <label for="txtDBName">Database Name:</label>
+        <select id="txtDBName" name="txtDBName">
+            <option value="db1">DB 1</option>
+            <option value="db2">DB 2</option>
+            <!-- Add other database options as needed -->
+        </select>
+
+        <div class="radio-group">
+            <input type="radio" id="radioFull" name="backupType" value="full" checked>
+            <label for="radioFull">Full Backup</label>
+
+            <input type="radio" id="radioIncremental" name="backupType" value="incremental">
+            <label for="radioIncremental">Incremental Backup</label>
+        </div>
+
+        <button id="btnBackup">Start Backup</button>
+        <button id="btnCancel">Cancel</button>
+    </div>
+
+    <!-- Query Execution Panel -->
+    <div class="panel">
+        <label for="txtQuery">Execute SQL Query:</label>
+        <textarea id="txtQuery" name="txtQuery" rows="4" placeholder="Enter SQL Query"></textarea>
+        <button id="btnQuery">Execute Query</button>
+    </div>
+
+    <input type="file" id="fileUpload" style="display: none;">
+</div>
+
+<script src="../scripts/backup.js"></script>
+</body>
+</html>

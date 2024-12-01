@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bill Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/vbill_all_statement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All Bill Statement</h1>
+
+        <!-- Date Selection and Inputs -->
+        <div class="date-selection">
+            <div class="input-group">
+                <label for="mtb_TDate">Transaction Date:</label>
+                <input type="date" id="mtb_TDate">
+            </div>
+            <div class="input-group">
+                <label for="dateTimePicker1">Date:</label>
+                <input type="date" id="dateTimePicker1">
+            </div>
+            <div class="input-group">
+                <label for="txtYear1">Year 1:</label>
+                <input type="text" id="txtYear1">
+            </div>
+            <div class="input-group">
+                <label for="txtDay1">Day 1:</label>
+                <input type="text" id="txtDay1">
+            </div>
+            <div class="input-group">
+                <label for="txtYear">Year:</label>
+                <input type="text" id="txtYear">
+            </div>
+            <div class="input-group">
+                <label for="txtDay">Day:</label>
+                <input type="text" id="txtDay">
+            </div>
+            <div class="input-group">
+                <label for="txtmonth1">Month 1:</label>
+                <input type="text" id="txtmonth1">
+            </div>
+            <div class="input-group">
+                <label for="txtmonth">Month:</label>
+                <input type="text" id="txtmonth">
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="checkbox-section">
+            <label for="checkBox2">Checkbox 2:</label>
+            <input type="checkbox" id="checkBox2">
+        </div>
+
+        <!-- DataGrid -->
+        <div class="datagrid-section">
+            <h2>Bill Details</h2>
+            <table id="billStatementGrid">
+                <thead>
+                    <tr>
+                        <th>Supplier Name</th>
+                        <th>In Quantity</th>
+                        <th>In Rate</th>
+                        <th>In T. Rate</th>
+                        <th>Debit</th>
+                        <th>Out Quantity</th>
+                        <th>Out Rate</th>
+                        <th>Out T. Rate</th>
+                        <th>Column 3</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/vbill_all_statement.js"></script>
+</body>
+</html>

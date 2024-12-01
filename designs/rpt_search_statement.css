@@ -1,0 +1,69 @@
+/* General Styles */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+.search-section h3 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.report-section {
+    margin-top: 20px;
+}
+
+#crystalReportViewer {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crystalReportViewer p {
+    color: #555;
+    font-size: 16px;
+}

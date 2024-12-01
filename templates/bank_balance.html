@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/bank_balance.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bank Balance</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button id="refreshBtn">Refresh</button>
+        <button id="exportBtn">Export</button>
+    </div>
+
+    <!-- Date Input Section -->
+    <div class="date-input-section">
+        <label for="txt_Date">Select Date:</label>
+        <input type="date" id="txt_Date">
+    </div>
+
+    <div class="custom-date">
+        <label for="txtDay">Day:</label>
+        <input type="text" id="txtDay" placeholder="DD">
+        <label for="txtMonth">Month:</label>
+        <input type="text" id="txtMonth" placeholder="MM">
+        <label for="txtYear">Year:</label>
+        <input type="text" id="txtYear" placeholder="YYYY">
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+        <label for="progressBar">Processing:</label>
+        <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <!-- Data Grid for Bank Balance Details -->
+    <div class="data-grid">
+        <table id="bankBalanceTable">
+            <thead>
+            <tr>
+                <th>Bank Name</th>
+                <th>Balance</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Sample Bank</td>
+                <td>$10,000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../scripts/bank_balance.js"></script>
+</body>
+</html>

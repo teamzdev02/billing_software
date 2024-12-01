@@ -1,0 +1,70 @@
+/* Bill Summary Styles */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-section label {
+    font-weight: bold;
+}
+
+.filter-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.filter-section button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-section button:hover {
+    background-color: #0056b3;
+}
+
+.data-grid {
+    margin-top: 20px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-grid th,
+.data-grid td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.data-grid th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

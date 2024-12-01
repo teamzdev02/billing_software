@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Sheet</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/balance_sheet.css">
+</head>
+<body>
+<div class="container">
+    <h1>Balance Sheet</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button id="exportBtn">Export</button>
+        <button id="printBtn">Print</button>
+    </div>
+
+    <!-- Date Filter Panel -->
+    <div class="filter-section">
+        <label for="dateFrom">From:</label>
+        <input type="date" id="dateFrom">
+
+        <label for="dateTo">To:</label>
+        <input type="date" id="dateTo">
+    </div>
+
+    <!-- Split Container for Assets and Liabilities -->
+    <div class="balance-sheet">
+        <div class="section">
+            <h2>Liabilities</h2>
+            <div class="line-item">
+                <label>Loan:</label>
+                <span id="Lbl_Loan">0</span>
+            </div>
+            <div class="line-item">
+                <label>Current Liabilities</label>
+                <label>Sundry Creditors:</label>
+                <span id="Lbl_Syndrtcreditor">0</span>
+            </div>
+            <div class="line-item">
+                <label>Capital:</label>
+                <span id="Lbl_Captial">0</span>
+            </div>
+            <div class="line-item">
+                <label>Drawings:</label>
+                <span id="lbl_Drawing">0</span>
+            </div>
+            <div class="line-item">
+                <label>Profit and Loss A/c:</label>
+                <span id="Lbl_Loss">0</span>
+            </div>
+            <div class="line-item">
+                <label>Total:</label>
+                <span id="lbl_LTotal">0</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Assets</h2>
+            <div class="line-item">
+                <label>Fixed Assets:</label>
+                <span id="Lbl_FAsset">0</span>
+            </div>
+            <div>
+                <label>Current Assets</label>
+                <div class="line-item">
+                    <label>Bank Account:</label>
+                    <span id="Lbl_BankAccount">0</span>
+                </div>
+                <div class="line-item">
+                    <label>Cash in Hand:</label>
+                    <span id="lbl_CashInhand">0</span>
+                </div>
+                <div class="line-item">
+                    <label>Sundry Debtors:</label>
+                    <span id="lbl_SyndryDebitor">0</span>
+                </div>
+            </div>
+            <div class="line-item">
+                <label>Closing Stock:</label>
+                <span id="lbl_CCS">0</span>
+            </div>
+            <div class="line-item">
+                <label>Total:</label>
+                <span id="lbl_STotal">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../scripts/balance_sheet.js"></script>
+</body>
+</html>

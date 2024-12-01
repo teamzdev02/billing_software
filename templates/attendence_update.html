@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Update</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/attendence_update.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="../scripts/attendence_update.js" defer></script>
+</head>
+<body>
+    <div class="container" x-data="attendanceUpdate()">
+        <h1>Attendance Update</h1>
+
+        <!-- Toolbar (ToolStrip) -->
+        <div class="toolbar">
+            <button @click="updateAttendance()">Update Attendance</button>
+            <button @click="clearForm()">Clear</button>
+        </div>
+
+        <!-- Date Selection and Token Number -->
+        <div class="date-token">
+            <label for="date">Date:</label>
+            <input type="date" id="date" x-model="date">
+
+            <label for="token">Token Number:</label>
+            <input type="text" id="token" x-model="tokenNumber">
+        </div>
+
+        <!-- Session Attendance -->
+        <div class="session-attendance">
+            <label for="morningAttendance">Morning Attendance:</label>
+            <select id="morningAttendance" x-model="morningAttendance">
+                <option value="">Select</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <label for="afternoonAttendance">Afternoon Attendance:</label>
+            <select id="afternoonAttendance" x-model="afternoonAttendance">
+                <option value="">Select</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+        </div>
+
+        <!-- Available and Present Lists with Buttons for Moving -->
+        <div class="attendance-lists">
+            <div class="list-box">
+                <h3>Available</h3>
+                <ul>
+                    <template x-for="person in available" :key="person">
+                        <li @click="selectPerson(person, 'available')" x-text="person"></li>
+                    </template>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button @click="moveSingle('available', 'present')">&gt;</button>
+                <button @click="moveAll('available', 'present')">&gt;&gt;</button>
+                <button @click="moveSingle('present', 'available')">&lt;</button>
+                <button @click="moveAll('present', 'available')">&lt;&lt;</button>
+            </div>
+
+            <div class="list-box">
+                <h3>Present</h3>
+                <ul>
+                    <template x-for="person in present" :key="person">
+                        <li @click="selectPerson(person, 'present')" x-text="person"></li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

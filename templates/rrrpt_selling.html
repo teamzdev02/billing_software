@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Report</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/rrrpt_selling.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selling Report</h1>
+        </header>
+
+        <!-- Report Filters Section -->
+        <div class="report-filters">
+            <div class="filter-row">
+                <label for="dateFrom">Date From:</label>
+                <input type="date" id="dateFrom">
+                <label for="dateTo">Date To:</label>
+                <input type="date" id="dateTo">
+            </div>
+            <div class="filter-row">
+                <label for="comboBox1">Category:</label>
+                <select id="comboBox1">
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="comboBox2">Combo Box 2:</label>
+                <select id="comboBox2">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="comboBox3">Combo Box 3:</label>
+                <select id="comboBox3">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <button id="generateReport">Generate Report</button>
+        </div>
+
+        <!-- Report Viewer Section -->
+        <div class="report-section">
+            <h3>Report Preview</h3>
+            <div id="reportViewer">
+                <p>The selling report will be displayed here.</p>
+            </div>
+        </div>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolButton1">Tool 1</button>
+            <button id="toolButton6">Tool 6</button>
+            <button id="toolButton2">Tool 2</button>
+            <button id="toolButton3">Tool 3</button>
+            <button id="toolButton4">Tool 4</button>
+        </div>
+
+        <!-- Additional Form Inputs -->
+        <div class="additional-filters">
+            <label for="txtKulee">Kulee:</label>
+            <input type="text" id="txtKulee">
+
+            <label for="txtDay">Day:</label>
+            <input type="text" id="txtDay">
+
+            <label for="txtMonth">Month:</label>
+            <input type="text" id="txtMonth">
+
+            <label for="txtYear">Year:</label>
+            <input type="text" id="txtYear">
+        </div>
+
+        <div class="checkbox-section">
+            <label for="checkBox1">Check 1:</label>
+            <input type="checkbox" id="checkBox1">
+        </div>
+    </div>
+
+    <script src="../scripts/rrrpt_selling.js"></script>
+</body>
+</html>

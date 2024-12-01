@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Creation</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/labour_creation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Labour Creation</h1>
+
+        <form id="labourForm">
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <label for="lbl_cname">Employee Name:</label>
+                <input type="text" id="lbl_cname" name="lbl_cname">
+
+                <label for="lbl_mno">Mobile Number:</label>
+                <input type="text" id="lbl_mno" name="lbl_mno">
+
+                <label for="lbl_add1">Address Line 1:</label>
+                <input type="text" id="lbl_add1" name="lbl_add1">
+
+                <label for="lbl_add2">Address Line 2:</label>
+                <input type="text" id="lbl_add2" name="lbl_add2">
+
+                <label for="lbl_pincode">Pin Code:</label>
+                <input type="text" id="lbl_pincode" name="lbl_pincode">
+            </div>
+
+            <!-- Employment Details Section -->
+            <div class="form-section">
+                <h2>Employment Details</h2>
+                <label for="txt_uname">Username:</label>
+                <input type="text" id="txt_uname" name="txt_uname">
+
+                <label for="txt_pass">Password:</label>
+                <input type="password" id="txt_pass" name="txt_pass">
+
+                <label for="txt_daysalary">Daily Salary:</label>
+                <input type="number" id="txt_daysalary" name="txt_daysalary">
+
+                <label for="txt_monthsalary">Monthly Salary:</label>
+                <input type="number" id="txt_monthsalary" name="txt_monthsalary">
+
+                <label for="dateofjoining">Date of Joining:</label>
+                <input type="date" id="dateofjoining" name="dateofjoining">
+            </div>
+
+            <!-- Active Status Section -->
+            <div class="form-section">
+                <label for="checkBox1">Active:</label>
+                <input type="checkbox" id="checkBox1" name="checkBox1">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-section">
+                <button type="submit" id="submitBtn">Submit</button>
+            </div>
+        </form>
+
+        <!-- Data Table -->
+        <div class="data-table">
+            <h2>Employee Records</h2>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Daily Salary</th>
+                        <th>Monthly Salary</th>
+                        <th>Date of Joining</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/labour_creation.js"></script>
+</body>
+</html>

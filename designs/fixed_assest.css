@@ -1,0 +1,59 @@
+/* Specific styling for Fixed Asset */
+
+/* Date Filters */
+.date-filters {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Toolbar Buttons */
+.toolbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

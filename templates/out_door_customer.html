@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Customer</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/out_door_customer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Outdoor Customer</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton1">New</button>
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton3">Modify</button>
+            <button id="toolStripButton5">Delete</button>
+            <button id="toolStripButton6">Exit</button>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="flex-row">
+                <label for="txt_Code">Customer Code:</label>
+                <input type="text" id="txt_Code" placeholder="Enter Code">
+            </div>
+            <div class="flex-row">
+                <label for="comboBox1">Customer Type:</label>
+                <select id="comboBox1">
+                    <option value="Regular">Regular</option>
+                    <option value="Walk-in">Walk-in</option>
+                </select>
+            </div>
+            <div class="flex-row">
+                <label for="textBox7">Name:</label>
+                <input type="text" id="textBox7" placeholder="Enter Name">
+            </div>
+            <div class="flex-row">
+                <label for="textBox5">Address:</label>
+                <textarea id="textBox5" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="flex-row">
+                <label for="textBox2">Phone:</label>
+                <input type="tel" id="textBox2" placeholder="Enter Phone Number">
+            </div>
+            <div class="flex-row">
+                <label for="dateTimePicker1">Date:</label>
+                <input type="date" id="dateTimePicker1">
+            </div>
+        </div>
+
+        <!-- Data Grid Section -->
+        <table id="dataGridView1">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Customer Code</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
+                    <th>Column 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/out_door_customer.js"></script>
+</body>
+</html>

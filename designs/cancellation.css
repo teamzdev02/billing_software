@@ -1,0 +1,23 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.toolbar button {
+    margin-right: 10px;
+}
+
+.panel {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.progress-bar-container {
+    margin-top: 15px;
+}
+
+.grid {
+    overflow-x: auto;
+}

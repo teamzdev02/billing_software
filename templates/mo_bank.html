@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoBank</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/mo_bank.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="btnAdd" class="toolbar-btn">Add</button>
+        <button id="btnEdit" class="toolbar-btn">Edit</button>
+        <button id="btnDelete" class="toolbar-btn">Delete</button>
+    </div>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="bankName">Bank Name:</label>
+            <select id="bankName" class="form-control">
+                <option value="">Select Bank</option>
+                <option value="Bank A">Bank A</option>
+                <option value="Bank B">Bank B</option>
+                <option value="Bank C">Bank C</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+        </div>
+
+        <div class="form-actions">
+            <button id="submitBtn" class="btn-submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/mo_bank.js"></script>
+</body>
+</html>

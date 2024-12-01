@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash In Hand Transaction</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/cash_in_hand_transaction.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="submitBtn">Submit</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+
+        <div class="form-section">
+            <label for="balance">Balance:</label>
+            <input type="text" id="balance" placeholder="Enter balance">
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" placeholder="Enter amount">
+
+            <label for="narration">Narration:</label>
+            <input type="text" id="narration" placeholder="Enter narration">
+
+            <label for="remarks">Remarks:</label>
+            <input type="text" id="remarks" placeholder="Enter remarks">
+
+            <label for="expense">Other Expenses:</label>
+            <select id="expense">
+                <option value="expense1">Expense 1</option>
+                <option value="expense2">Expense 2</option>
+            </select>
+
+            <label for="laborExpense">Labor Expenses:</label>
+            <select id="laborExpense">
+                <option value="labor1">Labor 1</option>
+                <option value="labor2">Labor 2</option>
+            </select>
+        </div>
+
+        <div class="radio-buttons">
+            <input type="radio" id="radioOption1" name="transactionType">
+            <label for="radioOption1">Option 1</label>
+
+            <input type="radio" id="radioOption2" name="transactionType">
+            <label for="radioOption2">Option 2</label>
+
+            <input type="radio" id="radioOption3" name="transactionType">
+            <label for="radioOption3">Option 3</label>
+
+            <input type="radio" id="radioOption4" name="transactionType">
+            <label for="radioOption4">Option 4</label>
+        </div>
+    </div>
+
+    <script src="../scripts/cash_in_hand_transaction.js"></script>
+</body>
+</html>

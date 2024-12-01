@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Account</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/sell_account.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sell Account</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="dateTimePicker1">Start Date:</label>
+            <input type="date" id="dateTimePicker1">
+
+            <label for="dateTimePicker2">End Date:</label>
+            <input type="date" id="dateTimePicker2">
+        </div>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolStripButton5">Generate Report</button>
+            <button id="toolStripButton6">Export</button>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Account Name</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Unit</th>
+                        <th>Make</th>
+                        <th>Column 4</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/sell_account.js"></script>
+</body>
+</html>

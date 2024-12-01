@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Category</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/subcategory.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sub Category</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnNew">New</button>
+            <button id="btnSave">Save</button>
+            <button id="btnDelete">Delete</button>
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+            <button id="btnClose">Close</button>
+        </div>
+
+        <!-- Input Panel -->
+        <div class="input-panel">
+            <div class="row">
+                <label for="txt_Mcode">M-Code:</label>
+                <input type="text" id="txt_Mcode">
+            </div>
+            <div class="row">
+                <label for="txt_mname">Name:</label>
+                <input type="text" id="txt_mname">
+            </div>
+            <div class="row">
+                <label for="txt_CCode">C-Code:</label>
+                <input type="text" id="txt_CCode">
+            </div>
+            <div class="row">
+                <label for="isActive">Active:</label>
+                <input type="checkbox" id="isActive">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table id="subCategoryTable">
+                <thead>
+                    <tr>
+                        <th>Column1</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+                        <th>Column4</th>
+                        <th>C-Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <label>Progress:</label>
+            <progress id="progressBar" max="100" value="0"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/subcategory.js"></script>
+</body>
+</html>

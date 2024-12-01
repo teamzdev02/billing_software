@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash In Hand</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/cash_in_hand.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="addBtn">Add</button>
+            <button id="editBtn">Edit</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+
+        <div class="filters">
+            <label for="startDate">From Date:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">To Date:</label>
+            <input type="date" id="endDate">
+        </div>
+
+        <div class="grid">
+            <table id="cashInHandTable">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Account Name</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Unit</th>
+                        <th>Make</th>
+                        <th>Column 4</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/cash_in_hand.js"></script>
+</body>
+</html>

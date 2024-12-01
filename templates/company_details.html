@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/companyDetails.css">
+    <title>Company Details</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Company Details</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btn1">Tool 1</button>
+            <button id="btn2">Tool 2</button>
+            <button id="btn3">Tool 3</button>
+            <button id="btn4">Tool 4</button>
+            <button id="btn5">Tool 5</button>
+            <button id="btn6">Tool 6</button>
+            <button id="btn7">Tool 7</button>
+        </div>
+
+        <!-- Form and Information Panel -->
+        <div class="form-panel">
+            <div class="flex-column form">
+                <label for="ccode">Company Code</label>
+                <input type="text" id="ccode" placeholder="Enter Company Code">
+
+                <label for="cname">Company Name</label>
+                <input type="text" id="cname" placeholder="Enter Company Name">
+
+                <label for="add1">Address 1</label>
+                <input type="text" id="add1" placeholder="Enter Address 1">
+
+                <label for="add2">Address 2</label>
+                <input type="text" id="add2" placeholder="Enter Address 2">
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter City">
+
+                <label for="pincode">Pincode</label>
+                <input type="text" id="pincode" placeholder="Enter Pincode">
+            </div>
+
+            <div class="flex-column">
+                <label for="tinno">TIN No.</label>
+                <input type="text" id="tinno" placeholder="Enter TIN No.">
+
+                <label for="cperson">Contact Person</label>
+                <input type="text" id="cperson" placeholder="Enter Contact Person">
+
+                <label for="mno">Mobile Number</label>
+                <input type="text" id="mno" placeholder="Enter Mobile Number">
+
+                <label for="landno">Landline Number</label>
+                <input type="text" id="landno" placeholder="Enter Landline Number">
+
+                <label for="iden">Identification</label>
+                <input type="text" id="iden" placeholder="Enter Identification">
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <label for="progress">Progress</label>
+        <progress id="progress" value="50" max="100"></progress>
+
+        <!-- Checkboxes -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="checkbox1"> Active</label>
+            <label><input type="checkbox" id="checkbox2"> In/Out</label>
+        </div>
+
+        <!-- Data Grid -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 5</th>
+                    <th>Column 8</th>
+                    <th>Column 3</th>
+                    <th>Column 6</th>
+                    <th>Column 7</th>
+                    <th>Column 10</th>
+                    <th>Column 9</th>
+                    <th>Column 11</th>
+                    <th>Identification</th>
+                    <th>Column 4</th>
+                    <th>In or Out</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 5</td>
+                    <td>Data 8</td>
+                    <td>Data 3</td>
+                    <td>Data 6</td>
+                    <td>Data 7</td>
+                    <td>Data 10</td>
+                    <td>Data 9</td>
+                    <td>Data 11</td>
+                    <td>Data Identification</td>
+                    <td>Data 4</td>
+                    <td>In/Out</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../scripts/companyDetails.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Sales</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/flower_sales.css"> <!-- Flower Sales Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Flower Sales</h1>
+
+        <!-- Sales Date -->
+        <div class="sales-date">
+            <label for="salesDate">Sales Date:</label>
+            <input type="date" id="salesDate">
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-section">
+            <label for="kuleeAmount">Kulee Amount:</label>
+            <input type="text" id="kuleeAmount" placeholder="Enter Kulee Amount">
+
+            <label for="remarks">Remarks:</label>
+            <input type="text" id="remarks" placeholder="Enter Remarks">
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="saveEntry">Save</button>
+            <button id="clearEntry">Clear</button>
+            <button id="deleteEntry">Delete</button>
+            <button id="refreshPage">Refresh</button>
+        </div>
+    </div>
+
+    <script src="../scripts/flower_sales.js"></script> <!-- Flower Sales Specific JS -->
+</body>
+</html>

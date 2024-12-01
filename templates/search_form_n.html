@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form N</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/search_form_n.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Form N</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="txtfilter">Search Filter:</label>
+            <input type="text" id="txtfilter" placeholder="Enter filter criteria">
+            <label for="radDropDownList1">Category:</label>
+            <select id="radDropDownList1">
+                <option value="all">All</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+            </select>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <table id="gvSearch">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/search_form_n.js"></script>
+</body>
+</html>

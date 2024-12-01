@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Report</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/invoice_report.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Report</h1>
+        </header>
+
+        <!-- Report Filters -->
+        <div class="filters">
+            <!-- Date Range Selection -->
+            <div class="filter-group">
+                <label for="datePicker1">Start Date:</label>
+                <input type="date" id="datePicker1">
+            </div>
+            <div class="filter-group">
+                <label for="datePicker2">End Date:</label>
+                <input type="date" id="datePicker2">
+            </div>
+
+            <!-- ComboBox for Term -->
+            <div class="filter-group">
+                <label for="cboTerm">Term:</label>
+                <select id="cboTerm">
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons for Filter Type -->
+            <div class="filter-group">
+                <label for="filterType">Filter By:</label>
+                <div>
+                    <input type="radio" id="radioButton1" name="filterType" value="Option1">
+                    <label for="radioButton1">Option 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="radioButton2" name="filterType" value="Option2">
+                    <label for="radioButton2">Option 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="radioButton3" name="filterType" value="Option3">
+                    <label for="radioButton3">Option 3</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report View Section -->
+        <div class="report-view">
+            <div id="crystalReportViewer" class="report-viewer">
+                <!-- Placeholder for Crystal Report -->
+                <p><strong>Crystal Report Placeholder</strong><br> (The actual Crystal Report Viewer would be rendered here)</p>
+            </div>
+        </div>
+
+        <!-- Footer with Actions -->
+        <div class="footer">
+            <button id="generateReport" class="action-button">Generate Report</button>
+            <button id="exitButton" class="action-button">Exit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/invoice_report.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Statement Report</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/rpt_search_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Statement Report</h1>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <h3>Search Report</h3>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="searchQuery">Search Query:</label>
+                    <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter search term...">
+                </div>
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-section">
+            <h3>Search Statement Report</h3>
+            <div id="crystalReportViewer">
+                <!-- Placeholder for the Crystal Report Viewer -->
+                <p>The search statement report will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/rpt_search_statement.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Expense Account</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/direct_expense_account.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Direct Expense Account</h1>
+
+        <!-- Date Pickers -->
+        <div class="flex-row">
+            <div>
+                <label for="dateTimePicker2">From Date</label>
+                <input type="date" id="dateTimePicker2">
+            </div>
+            <div>
+                <label for="dateTimePicker1">To Date</label>
+                <input type="date" id="dateTimePicker1">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <table id="dataGridView">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 3</th>
+                    <th>Unit</th>
+                    <th>Make</th>
+                    <th>Column 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically populated -->
+            </tbody>
+        </table>
+
+        <!-- Toolbar Buttons -->
+        <div class="toolbar">
+            <button id="toolStripButton2">Button 1</button>
+            <button id="toolStripButton5">Button 2</button>
+            <button id="toolStripButton6">Button 3</button>
+        </div>
+    </div>
+
+    <script src="../scripts/direct_expense_account.js"></script>
+</body>
+</html>

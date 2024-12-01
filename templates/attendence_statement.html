@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/attendence_statement.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="../scripts/attendence_statement.js" defer></script>
+</head>
+<body>
+    <div class="container" x-data="attendanceStatement()">
+        <h1>Attendance Statement</h1>
+
+        <!-- ToolStrip (Buttons for actions) -->
+        <div class="toolbar">
+            <button @click="generateReport()">Generate Report</button>
+            <button @click="printReport()">Print</button>
+            <button @click="setupPage()">Setup Page</button>
+        </div>
+
+        <div class="labour-name">
+            <label for="labour_name">Labour Name</label>
+            <input type="select" id="labour_name" x-model="labour_name">
+        </div>
+
+        <!-- Date Selection -->
+        <div class="date-selection">
+            <label for="startDate">Date:</label>
+            <input type="date" id="startDate" x-model="startDate">
+
+            <label for="endDate">To </label>
+            <input type="date" id="endDate" x-model="endDate">
+        </div>
+
+        <!-- Radio Buttons for Filter -->
+        <div>
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" value="option1" x-model="filterOption"> Present and Date Wise
+                </label>
+                <label>
+                    <input type="radio" value="option2" x-model="filterOption"> Present and Date Wise
+                </label>
+                <label>
+                    <input type="radio" value="option3" x-model="filterOption"> Both
+                </label>
+                <label>
+                    <input type="radio" value="option4" x-model="filterOption"> Labour Name and Date Wise
+                </label>
+            </div>
+        </div>
+
+        <!-- ComboBox (Dropdown) -->
+        <div class="combo-box">
+            <label for="department">Select Department:</label>
+            <select id="department" x-model="department">
+                <option value="">Select Department</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>IT</option>
+            </select>
+        </div>
+
+        <!-- Data Grid (Table) -->
+        <div class="data-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Shift A</th>
+                        <th>Shift B</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically generated -->
+                    <template x-for="record in records" :key="record.id">
+                        <tr>
+                            <td x-text="record.name"></td>
+                            <td x-text="record.date"></td>
+                            <td x-text="record.morning"></td>
+                            <td x-text="record.afternoon"></td>
+                            <td x-text="record.reason"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

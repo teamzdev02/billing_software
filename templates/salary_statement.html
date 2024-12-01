@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/salary_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Salary Statement</h1>
+        </header>
+
+        <!-- Report Filters Section -->
+        <div class="report-filters">
+            <div class="filter-row">
+                <label for="cboEmpCode">Employee Code:</label>
+                <select id="cboEmpCode">
+                    <option value="emp1">Employee 1</option>
+                    <option value="emp2">Employee 2</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="cboLabour">Labour:</label>
+                <select id="cboLabour">
+                    <option value="labour1">Labour 1</option>
+                    <option value="labour2">Labour 2</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="dateFrom">Date From:</label>
+                <input type="date" id="dateFrom">
+                <label for="dateTo">Date To:</label>
+                <input type="date" id="dateTo">
+            </div>
+            <button id="generateReport">Generate Report</button>
+        </div>
+
+        <!-- Report Viewer Section -->
+        <div class="report-section">
+            <h3>Report Preview</h3>
+            <div id="reportViewer">
+                <p>The salary report will be displayed here.</p>
+            </div>
+        </div>
+
+        <!-- Toolstrip Section -->
+        <div class="toolstrip">
+            <button id="toolButton6">Tool 6</button>
+            <button id="toolButton2">Tool 2</button>
+        </div>
+
+        <!-- Radio Buttons Section -->
+        <div class="radio-buttons">
+            <h4>Options</h4>
+            <div>
+                <input type="radio" id="radioButton1" name="reportOption" value="option1">
+                <label for="radioButton1">Option 1</label>
+            </div>
+            <div>
+                <input type="radio" id="radioButton2" name="reportOption" value="option2">
+                <label for="radioButton2">Option 2</label>
+            </div>
+            <div>
+                <input type="radio" id="radioButton3" name="reportOption" value="option3">
+                <label for="radioButton3">Option 3</label>
+            </div>
+            <div>
+                <input type="radio" id="radioButton4" name="reportOption" value="option4">
+                <label for="radioButton4">Option 4</label>
+            </div>
+            <div>
+                <input type="radio" id="radioButton5" name="reportOption" value="option5">
+                <label for="radioButton5">Option 5</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/salary_statement.js"></script>
+</body>
+</html>

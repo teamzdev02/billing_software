@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bills Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/all_bills_statement.css">
+</head>
+<body>
+<div class="container">
+    <h1>All Bills Statement</h1>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <div class="date-range">
+            <label for="date_from">From Date:</label>
+            <input type="date" id="date_from">
+
+            <label for="date_to">To Date:</label>
+            <input type="date" id="date_to">
+        </div>
+
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" id="chk_single">
+                Single
+            </label>
+            <label>
+                <input type="checkbox" id="chk_select_all">
+                Select All
+            </label>
+        </div>
+    </div>
+
+    <!-- Main Data Table -->
+    <div class="data-grid">
+        <table id="billStatementTable">
+            <thead>
+            <tr>
+                <th>Supplier Name</th>
+                <th>In Quantity</th>
+                <th>In Rate</th>
+                <th>In Total Rate</th>
+                <th>Debit</th>
+                <th>Out Quantity</th>
+                <th>Out Rate</th>
+                <th>Out Total Rate</th>
+                <th>Balance</th>
+                <th>Select</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Supplier A</td>
+                <td>100</td>
+                <td>$50</td>
+                <td>$5000</td>
+                <td>$1000</td>
+                <td>50</td>
+                <td>$40</td>
+                <td>$2000</td>
+                <td>$2000</td>
+                <td><input type="checkbox" class="select-row"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../scripts/all_bills_statement.js"></script>
+</body>
+</html>

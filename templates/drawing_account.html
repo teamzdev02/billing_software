@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Account</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/drawing_account.css"> <!-- Drawing Account Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Drawing Account</h1>
+
+        <!-- Date Picker Section -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="startDate">From Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="flex-column">
+                <label for="endDate">To Date:</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="addRecord">Add Record</button>
+            <button id="clearTable">Clear Table</button>
+        </div>
+
+        <!-- Data Table -->
+        <table id="dataGridView">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Account Name</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Unit</th>
+                    <th>Make</th>
+                    <th>Column 4</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/drawing_account.js"></script> <!-- Drawing Account Specific JS -->
+</body>
+</html>

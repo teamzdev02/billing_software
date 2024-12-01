@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HO Denomination</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/ho_denomination.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HO Denomination</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="newEntry" class="toolbar-button">New</button>
+            <button id="saveEntry" class="toolbar-button">Save</button>
+            <button id="deleteEntry" class="toolbar-button">Delete</button>
+            <button id="printEntry" class="toolbar-button">Print</button>
+        </div>
+
+        <!-- Form Section -->
+        <form id="denominationForm">
+            <!-- Date Picker -->
+            <div class="form-group">
+                <label for="datePicker">Date:</label>
+                <input type="date" id="datePicker" name="date">
+            </div>
+
+            <!-- Denomination Table -->
+            <div class="denomination-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Denomination</th>
+                            <th>Count</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="denominationRows">
+                        <tr>
+                            <td><input type="number" value="2000" readonly></td>
+                            <td><input type="number" class="count" data-value="2000" min="0"></td>
+                            <td><input type="text" class="amount" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" value="500" readonly></td>
+                            <td><input type="number" class="count" data-value="500" min="0"></td>
+                            <td><input type="text" class="amount" readonly></td>
+                        </tr>
+                        <!-- Additional rows can be added here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Totals Section -->
+            <div class="totals">
+                <label>Total Amount:</label>
+                <input type="text" id="totalAmount" readonly>
+            </div>
+        </form>
+    </div>
+
+    <script src="../scripts/ho_denomination.js"></script>
+</body>
+</html>

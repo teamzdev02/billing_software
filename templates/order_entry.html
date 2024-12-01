@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/order_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Entry</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btn_new">New</button>
+            <button id="btn_save">Save</button>
+            <button id="btn_modify">Modify</button>
+            <button id="btn_delete">Delete</button>
+            <button id="btn_exit">Exit</button>
+        </div>
+
+        <!-- Form Section -->
+        <div class="flex-column">
+            <div class="flex-row">
+                <label for="txt_VrNo">Voucher No:</label>
+                <input type="text" id="txt_VrNo" placeholder="Enter Voucher No">
+            </div>
+            <div class="flex-row">
+                <label for="txt_Date">Date:</label>
+                <input type="date" id="txt_Date">
+            </div>
+            <div class="flex-row">
+                <label for="cmb_Type">Type:</label>
+                <select id="cmb_Type">
+                    <option value="Type1">Type 1</option>
+                    <option value="Type2">Type 2</option>
+                </select>
+            </div>
+            <div class="flex-row">
+                <label for="txt_LedgerName">Ledger Name:</label>
+                <input type="text" id="txt_LedgerName" placeholder="Enter Ledger Name">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <table id="dataGrid">
+            <thead>
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+
+        <!-- Summary Section -->
+        <div class="flex-column">
+            <label for="lbl_NetAmot">Net Amount:</label>
+            <span id="lbl_NetAmot">0.00</span>
+        </div>
+    </div>
+
+    <script src="../scripts/order_entry.js"></script>
+</body>
+</html>

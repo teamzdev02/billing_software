@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Code</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/search_code.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Code</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <label for="txtYear">Year:</label>
+            <input type="text" id="txtYear" placeholder="Enter Year">
+
+            <label for="txtMonth">Month:</label>
+            <input type="text" id="txtMonth" placeholder="Enter Month">
+
+            <label for="txtDay">Day:</label>
+            <input type="text" id="txtDay" placeholder="Enter Day">
+
+            <label for="datePicker">Date:</label>
+            <input type="date" id="mtb_TDate">
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <table id="dgvGrid">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Amount</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/search_code.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Additional styles specific to the Order Entry page */
+
+/* Summary Section Styling */
+#lbl_NetAmot {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Table Customization */
+#dataGrid {
+    margin-top: 20px;
+}
+
+#dataGrid th, #dataGrid td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Button Styling Specific to Toolbar */
+.toolbar button {
+    background-color: #28a745;
+    font-size: 14px;
+}
+
+.toolbar button:hover {
+    background-color: #218838;
+}
+
+/* Highlight Rows on Hover */
+#dataGrid tbody tr:hover {
+    background-color: #e8f7e4;
+}

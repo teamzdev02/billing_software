@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out Time Management</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/out_time.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Out Time Management</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton6">Exit</button>
+        </div>
+
+        <!-- Date Picker -->
+        <div class="date-picker">
+            <label for="dateTimePicker_date">Date:</label>
+            <input type="date" id="dateTimePicker_date">
+        </div>
+
+        <!-- ListBox Section -->
+        <div class="listbox-section">
+            <div class="listbox-container">
+                <h3>Available</h3>
+                <select id="lst_available" size="10" multiple></select>
+            </div>
+
+            <div class="listbox-controls">
+                <button id="btn_moveall">>>></button>
+                <button id="btn_singlemove">></button>
+                <button id="btn_movesingleleft"><</button>
+                <button id="btn_moveallleft"><<<</button>
+            </div>
+
+            <div class="listbox-container">
+                <h3>Present</h3>
+                <select id="lst_present" size="10" multiple></select>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/out_time.js"></script>
+</body>
+</html>

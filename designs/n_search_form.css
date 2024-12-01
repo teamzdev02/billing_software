@@ -1,0 +1,53 @@
+/* General container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Link label styling */
+.link-label {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link-label:hover {
+    text-decoration: underline;
+}
+
+/* Filter container styling */
+.filter-container {
+    margin-bottom: 20px;
+}
+
+#filterText {
+    padding: 8px;
+    width: 300px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Data table styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f4f4f4;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f1f1f1;
+}

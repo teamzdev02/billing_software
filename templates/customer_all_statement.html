@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer All Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/customer_all_statement.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate">
+
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate">
+
+            <label for="type">Statement Type:</label>
+            <select id="type">
+                <option value="Debit">Debit</option>
+                <option value="Credit">Credit</option>
+                <option value="All">All</option>
+            </select>
+
+            <label for="year1">Year:</label>
+            <input type="text" id="year1">
+
+            <label for="month1">Month:</label>
+            <input type="text" id="month1">
+
+            <label for="day1">Day:</label>
+            <input type="text" id="day1">
+        </div>
+
+        <!-- Filter By Date Section -->
+        <div class="filter-section">
+            <label for="year">Year:</label>
+            <input type="text" id="year">
+
+            <label for="month">Month:</label>
+            <input type="text" id="month">
+
+            <label for="day">Day:</label>
+            <input type="text" id="day">
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="grid-section">
+            <table id="customerGrid">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Select</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <tr>
+                        <td>Customer 1</td>
+                        <td><input type="checkbox"></td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>2024-01-01</td>
+                    </tr>
+                    <tr>
+                        <td>Customer 2</td>
+                        <td><input type="checkbox"></td>
+                        <td>200</td>
+                        <td>100</td>
+                        <td>2024-01-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/customer_all_statement.js"></script>
+</body>
+</html>

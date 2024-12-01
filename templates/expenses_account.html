@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Account</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/expenses_account.css"> <!-- Expenses Account Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Expenses Account</h1>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <label for="startDate">From Date:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">To Date:</label>
+            <input type="date" id="endDate">
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="addExpense">Add Expense</button>
+            <button id="clearTable">Clear Table</button>
+        </div>
+
+        <!-- Data Table -->
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Unit</th>
+                    <th>Make</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../scripts/expenses_account.js"></script> <!-- Expenses Account Specific JS -->
+</body>
+</html>

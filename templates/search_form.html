@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/search_form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Form</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="txtfilter">Search Filter:</label>
+            <input type="text" id="txtfilter" placeholder="Enter filter criteria">
+        </div>
+
+        <!-- Link Label Section -->
+        <div class="link-section">
+            <a href="#" id="LinkLabel1">Click Here for More Information</a>
+        </div>
+
+        <!-- Data Grid Section -->
+        <div class="data-grid">
+            <label id="lblColumn">Filter Results:</label>
+            <table id="gvSearch">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/search_form.js"></script>
+</body>
+</html>

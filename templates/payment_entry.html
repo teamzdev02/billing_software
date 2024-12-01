@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/payment_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Entry Form</h1>
+
+        <!-- Date and Voucher Section -->
+        <div class="header-section">
+            <div class="date-input">
+                <label for="mtb_Date">Date:</label>
+                <input type="date" id="mtb_Date">
+                <span id="lbl_Weakday">Monday</span>
+            </div>
+            <div class="voucher-input">
+                <label for="txt_VrNo">Voucher No:</label>
+                <input type="text" id="txt_VrNo">
+            </div>
+        </div>
+
+        <!-- Group and Ledger Section -->
+        <div class="group-ledger-section">
+            <div class="group-input">
+                <label for="cmb_Group">Group:</label>
+                <select id="cmb_Group">
+                    <option value="Group1">Group1</option>
+                    <option value="Group2">Group2</option>
+                    <option value="Group3">Group3</option>
+                </select>
+            </div>
+            <div class="ledger-input">
+                <label for="txt_LedgerName">Ledger Name:</label>
+                <input type="text" id="txt_LedgerName">
+            </div>
+        </div>
+
+        <!-- Narration Section -->
+        <div class="narration-section">
+            <label for="txt_Nar1">Narration:</label>
+            <textarea id="txt_Nar1" rows="3"></textarea>
+        </div>
+
+        <!-- Debit and Credit Section -->
+        <div class="debit-credit-section">
+            <div class="debit-input">
+                <label for="txt_Debt">Debit:</label>
+                <input type="number" id="txt_Debt" step="0.01">
+            </div>
+            <div class="credit-input">
+                <label for="txt_Credit">Credit:</label>
+                <input type="number" id="txt_Credit" step="0.01">
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <h3>Payment Details</h3>
+            <table id="paymentDetails">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Ledger Name</th>
+                        <th>Narration</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-section">
+            <button id="addRow">Add Entry</button>
+            <button id="clearForm">Clear</button>
+            <button id="submitForm">Submit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/payment_entry.js"></script>
+</body>
+</html>

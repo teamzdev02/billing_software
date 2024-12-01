@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/purchase_order_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase Order Entry</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton1">New</button>
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton5">Delete</button>
+            <button id="toolStripButton6">Close</button>
+        </div>
+
+        <!-- Order Information -->
+        <div class="order-info">
+            <label for="txt_Date">Order Date:</label>
+            <input type="date" id="txt_Date">
+
+            <label for="txtcode">Order Code:</label>
+            <input type="text" id="txtcode">
+
+            <label for="txt_discount">Discount:</label>
+            <input type="text" id="txt_discount">
+
+            <label for="txt_qty">Quantity:</label>
+            <input type="number" id="txt_qty">
+
+            <label for="txt_rate">Rate:</label>
+            <input type="text" id="txt_rate">
+
+            <label for="txt_Unit">Unit:</label>
+            <input type="text" id="txt_Unit">
+
+            <label for="txt_Brand">Brand:</label>
+            <input type="text" id="txt_Brand">
+
+            <label for="txt_Style">Style:</label>
+            <input type="text" id="txt_Style">
+
+            <label for="txt_ProductName">Product Name:</label>
+            <input type="text" id="txt_ProductName">
+        </div>
+
+        <!-- Buttons and Progress Bar -->
+        <div class="buttons">
+            <button id="button1">Submit</button>
+            <button id="button2">Reset</button>
+            <button id="button3">Add Product</button>
+            <button id="button4">Remove Product</button>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="table-container">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>SNo</th>
+                        <th>Item Code</th>
+                        <th>Product</th>
+                        <th>Brand</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Discount</th>
+                        <th>Vat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress">
+            <label for="progressBar1">Progress:</label>
+            <progress id="progressBar1" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="../scripts/purchase_order_entry.js"></script>
+</body>
+</html>

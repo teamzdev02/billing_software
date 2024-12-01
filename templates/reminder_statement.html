@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/reminder_statement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reminder Statement</h1>
+            <div class="toolbar">
+                <button id="newButton">New</button>
+                <button id="saveButton">Save</button>
+                <button id="deleteButton">Delete</button>
+                <button id="updateButton">Update</button>
+                <button id="printButton">Print</button>
+            </div>
+        </header>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <label for="txt_Code">Code:</label>
+            <input type="text" id="txt_Code" placeholder="Enter code">
+
+            <label for="txt_Remarks">Remarks:</label>
+            <textarea id="txt_Remarks" rows="4" placeholder="Enter your remarks"></textarea>
+
+            <label for="datePicker">Date:</label>
+            <input type="date" id="datePicker">
+
+            <div class="checkbox-section">
+                <label for="checkBox1">Is Active:</label>
+                <input type="checkbox" id="checkBox1">
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-section">
+            <table id="dataGrid">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Date</th>
+                        <th>Remarks</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic Rows Will Be Appended Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/reminder_statement.js"></script>
+</body>
+</html>

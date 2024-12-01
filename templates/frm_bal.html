@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Form</title>
+    <link rel="stylesheet" href="../designs/frm_bal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Balance Management</h1>
+
+        <!-- Filter Panel -->
+        <div class="panel">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search by Ledger Name...">
+
+            <div class="radio-buttons">
+                <label><input type="radio" name="filter" value="All" checked> All</label>
+                <label><input type="radio" name="filter" value="Active"> Active</label>
+                <label><input type="radio" name="filter" value="Inactive"> Inactive</label>
+            </div>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Is Active</th>
+                        <th>Ledger Name</th>
+                        <th>Address 1</th>
+                        <th>Address 2</th>
+                        <th>Address 3</th>
+                        <th>Type</th>
+                        <th>Group Name</th>
+                        <th>Details</th>
+                        <th>Op CR</th>
+                        <th>Op DR</th>
+                        <th>CR</th>
+                        <th>DR</th>
+                    </tr>
+                </thead>
+                <tbody id="gridBody">
+                    <!-- Rows will be dynamically added -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Save Button -->
+        <div class="actions">
+            <button id="save">Save</button>
+        </div>
+    </div>
+
+    <script src="../scripts/frm_bal.js"></script>
+</body>
+</html>

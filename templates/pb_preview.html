@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBPreview</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/pb_preview.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 id="reportTitle">PBPreview Report</h1>
+        </header>
+
+        <!-- Panel Section -->
+        <section class="panel-section">
+            <div class="panel">
+                <label for="reportOptions">Report Options:</label>
+                <select id="reportOptions">
+                    <option value="report1">Report 1</option>
+                    <option value="report2">Report 2</option>
+                    <option value="report3">Report 3</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Crystal Report Viewer -->
+        <section class="report-viewer">
+            <iframe id="reportViewer" src="sample-report.pdf" title="Report Viewer" frameborder="0"></iframe>
+        </section>
+    </div>
+
+    <script src="../scripts/pb_preview.js"></script>
+</body>
+</html>

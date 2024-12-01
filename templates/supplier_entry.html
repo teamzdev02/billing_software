@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Entry</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/supplier_entry.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Supplier Entry</h1>
+        </header>
+
+        <!-- Control Buttons -->
+        <div class="control-buttons">
+            <button id="btnNew">New</button>
+            <button id="btnSave">Save</button>
+            <button id="btnModify">Modify</button>
+            <button id="btnDelete">Delete</button>
+            <button id="btnExit">Exit</button>
+        </div>
+
+        <!-- Entry Form -->
+        <form id="supplierForm" class="form-panel">
+            <fieldset>
+                <legend>Supplier Details</legend>
+                <label for="txtLedgerNo">Ledger No:</label>
+                <input type="text" id="txtLedgerNo" required>
+                
+                <label for="txtLedgerName">Ledger Name:</label>
+                <input type="text" id="txtLedgerName" required>
+                
+                <label for="cmbType">Type:</label>
+                <select id="cmbType">
+                    <option value="">Select Type</option>
+                    <option value="supplier">Supplier</option>
+                    <option value="distributor">Distributor</option>
+                </select>
+                
+                <label for="txtGroup">Group:</label>
+                <input type="text" id="txtGroup">
+
+                <label for="txtAddress1">Address 1:</label>
+                <input type="text" id="txtAddress1">
+
+                <label for="txtAddress2">Address 2:</label>
+                <input type="text" id="txtAddress2">
+
+                <label for="txtAddress3">Address 3:</label>
+                <input type="text" id="txtAddress3">
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="txtDetails">Details:</label>
+                <textarea id="txtDetails"></textarea>
+                
+                <label for="txtOpeningCR">Opening Credit:</label>
+                <input type="number" id="txtOpeningCR">
+
+                <label for="txtOpeningDR">Opening Debit:</label>
+                <input type="number" id="txtOpeningDR">
+
+                <label for="txtCommission">Commission:</label>
+                <input type="number" id="txtCommission">
+
+                <label for="txtAdditionalCommission">Additional Commission:</label>
+                <input type="number" id="txtAdditionalCommission">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="chkSMS">Send SMS:</label>
+                <input type="checkbox" id="chkSMS">
+                
+                <label for="chkActive">Is Active:</label>
+                <input type="checkbox" id="chkActive">
+            </fieldset>
+        </form>
+
+        <!-- Search Panel -->
+        <div class="search-panel">
+            <label for="txtSearch">Search:</label>
+            <input type="text" id="txtSearch" placeholder="Search by Ledger Name">
+            <button id="btnSearch">Search</button>
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <table id="supplierTable">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Is Active</th>
+                        <th>Ledger Name</th>
+                        <th>Address 1</th>
+                        <th>Address 2</th>
+                        <th>Address 3</th>
+                        <th>Type</th>
+                        <th>Group</th>
+                        <th>Details</th>
+                        <th>Opening CR</th>
+                        <th>Opening DR</th>
+                        <th>Commission</th>
+                        <th>Additional Commission</th>
+                        <th>Send SMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/supplier_entry.js"></script>
+</body>
+</html>

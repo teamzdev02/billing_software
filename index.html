@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Software - Home</title>
+    <link rel="stylesheet" href="designs/common.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="templates/about.html">About</a> |
+        <a href="templates/settings.html">Settings</a> |
+        <a href="templates/account_mapping.html">Account_Mapping</a> |
+        <a href="templates/attendence_statement.html">Attendance Statement</a> |
+        <a href="templates/attendence_update.html">Attendance Update</a> |
+        <a href="templates/backup.html">Backup</a> |
+        <a href="templates/balance.html">Balance</a> |
+        <a href="templates/balance_sheet.html">Balance Sheet</a> |
+        <a href="templates/bank_balance.html">Bank Balance</a> |
+        <a href="templates/bank_account.html">Bank Account</a> |
+        <a href="templates/bank_ledger_creation.html">Bank Ledger Creation</a> |
+        <a href="templates/bill_summary.html">Bill Summary</a> |
+        <a href="templates/bill_preview.html">Bill Preview</a> |
+        <a href="templates/all_bills_statement.html">All Bill Statement</a> |
+        <a href="templates/cancellation.html">Cancellation</a> |
+        <a href="templates/cash_book_account.html">Cash Book Account</a> |
+        <a href="templates/cash_in_hand.html">Cash in Hand</a> |
+        <a href="templates/cash_in_hand_transaction.html">Cash in Hand Transaction</a> |
+        <a href="templates/category.html">Category</a> |
+        <a href="templates/cb_denomination.html">CB Denomination</a> |
+        <a href="templates/cheque_customer_receipt.html">Cheque Customer Receipt</a> |
+        <a href="templates/cheque_dealer_receipt.html">Cheque Dealer Receipt</a> |
+        <a href="templates/company.html">Company</a> |
+        <a href="templates/company_details.html">Company Details</a> |
+        <a href="templates/company_profile.html">Company Profile</a> |
+        <a href="templates/credit_book.html">Credit Book</a> |
+        <a href="templates/credit_note.html">Credit Note</a> |
+        <a href="templates/customer_account.html">Customer Account</a> |
+        <a href="templates/customer_all_statement.html">Customer All Statement</a> |
+        <a href="templates/customer_entry.html">Customer Entry</a> |
+        <a href="templates/customer_receipt.html">Customer Receipt</a> |
+        <a href="templates/customer_statement.html">Customer Statement</a> |
+        <a href="templates/daily_note.html">Daily Note</a> |
+        <a href="templates/day_close.html">Daily Close</a> |
+        <a href="templates/dealer_cheque_print.html">Dealer Cheque Print</a> |
+        <a href="templates/dealer_details.html">Dealer Details</a> |
+        <a href="templates/dealer_receipt.html">Dealer Receipt</a> |
+        <a href="templates/debt_credit_statement.html">Debt Credit Statement</a> |
+        <a href="templates/dii_items_all_statement.html">DII Items All Statement</a> |
+        <a href="templates/direct_expense_account.html">Direct Expense Account</a> |
+        <a href="templates/drawing_account.html">Drawing Account</a> |
+        <a href="templates/employee_ledger.html">Employee Ledger</a> |
+        <a href="templates/expenses_account.html">Expenses Account</a> |
+        <a href="templates/expenses_ledger.html">Expenses Ledger</a> |
+        <a href="templates/i_invoice_statement.html">I Invoice Statement</a> |
+        <a href="templates/i_items_all_statement.html">I Items All Statement</a> |
+        <a href="templates/ii_items_all_statement.html">I I Items All Statement</a> |
+        <a href="templates/in_time.html">In Time</a> |
+        <a href="templates/invoice_report.html">Invoice Report</a> |
+        <a href="templates/invoice_report1.html">I Invoice Report 1</a> |
+        <a href="templates/invoice_statement.html">Invoice Statement</a> |
+        <a href="templates/invoice_statement1.html">Invoice Statement 1</a> |
+        <a href="templates/invoice_statement2.html">Invoice Statement 2</a> |
+        <a href="templates/items_all_statement.html">Items All Statement</a> |
+        <a href="templates/items_all_statement_with_rate.html">Items All Statement With Rate</a> |
+        <a href="templates/labour_creation.html">Labour Creation</a> |
+        <a href="templates/ledger_creation.html">Ledger Creation</a> |
+        <a href="templates/login.html">Login</a> |
+        <a href="templates/master.html">Master</a> |
+        <a href="templates/medicine_details.html">Medicine Details</a> |
+        <a href="templates/menu.html">Menu</a> |
+        <a href="templates/menu1.html">Menu 1</a> |
+        <a href="templates/menu2.html">Menu 2</a> |
+        <a href="templates/menu3.html">Menu 3</a> |
+        <a href="templates/mo_bank.html">MO Bank</a> |
+        <a href="templates/n_search_form.html">N Search Form</a> |
+        <a href="templates/order_entry.html">Order Entry</a> |
+        <a href="templates/order_new_entry.html">Order New Entry</a> |
+        <a href="templates/out_door_customer.html">Out Door Customer</a> |
+        <a href="templates/out_door_receipt.html">Out Door Receipt</a> |
+        <a href="templates/out_time.html">Out Time</a> |
+        <a href="templates/payment_entry.html">Payment Entry</a> |
+        <a href="templates/payment_entry1.html">Payment Entry 1</a> |
+        <a href="templates/pb_preview.html">PB Preview</a> |
+        <a href="templates/pnl_form.html">PNL Form</a> |
+        <a href="templates/profile.html">Profile</a> |
+        <a href="templates/profile1.html">Profile 1</a> |
+        <a href="templates/purchase_account.html">Purchase Account</a> |
+        <a href="templates/purchase_expenses.html">Purchase Expenses</a> |
+        <a href="templates/purchase_entry.html">Purchase Entry</a> |
+        <a href="templates/purchase_order_entry.html">Purchase Order Entry</a> |
+        <a href="templates/purchase_stock.html">Purchase Stock</a> |
+        <a href="templates/purchase_stock1.html">Purchase Stock 1</a> |
+        <a href="templates/quotation_entry.html">Purchase Account</a> |
+        <a href="templates/receipt_entry.html">Receipt Entry</a> |
+        <a href="templates/receipt_statement.html">Receipt Statement</a> |
+        <a href="templates/receipt_statement1.html">Receipt Statement 1</a> |
+        <a href="templates/receipt.html">Receipt</a> |
+        <a href="templates/receipt1.html">Receipt 1</a> |
+        <a href="templates/reminder.html">Reminder</a> |
+        <a href="templates/rpt_bank_report_form.html">Rpt Bank Report Form</a> |
+        <a href="templates/rpt_customer_receipt_statement.html">Rpt Customer Receipt Statement</a> |
+        <a href="templates/rpt_from_quotation_entry.html">Rpt From Quotation Entry</a> |
+        <a href="templates/rpt_purchase_bill_form.html">Rpt Purchase Bill Form</a> |
+        <a href="templates/rpt_purchase_bill_form1.html">Rpt Purchase Bill Form 1</a> |
+        <a href="templates/rpt_purchase_new.html">Rpt Purchase New</a> |
+        <a href="templates/rpt_quotation_order_statement.html">Rpt Quotation Order Statement</a> |
+        <a href="templates/rpt_search_statement.html">Rpt Search Statement</a> |
+        <a href="templates/rpt_supplier_receipt.html">Rpt Supplier Receipt</a> |
+        <a href="templates/rrpt_selling.html">Rrpt Selling</a> |
+        <a href="templates/rrpt_selling1.html">Rrpt Selling 1</a> |
+        <a href="templates/rrpt_selling_all.html">Rrpt Selling All</a> |
+        <a href="templates/rrrpt_selling.html">Rrrpt Selling</a> |
+        <a href="templates/salary_statement.html">Salary Statement</a> |
+        <a href="templates/sales_tax_credit_note.html">Sales Tax Credit Note</a> |
+        <a href="templates/sales_tax_report.html">Sales Tax Report</a> |
+        <a href="templates/search.html">Search</a> |
+        <a href="templates/search_code.html">Search Code</a> |
+        <a href="templates/search_form.html">Search Form</a> |
+        <a href="templates/search_form_n.html">Search Form N</a> |
+        <a href="templates/search_stock.html">Search Stock</a> |
+        <a href="templates/sell_account.html">Sell Account</a> |
+        <a href="templates/sell_product.html">Sell Product</a> |
+        <a href="templates/show_reminder.html">Show Reminder</a> |
+        <a href="templates/si_invoice_statement.html">SI Invoice Statement</a> |
+        <a href="templates/single_item_cancellation.html">Single Item Cancellation</a> |
+        <a href="templates/single_item_cancellation1.html">Single Item Cancellation 1</a> |
+        <a href="templates/stock_account.html">Stock Account</a> |
+        <a href="templates/stock_adjust.html">Stock Adjust</a> |
+        <a href="templates/stock_mapping.html">Stock Mapping</a> |
+        <a href="templates/subcategory.html">Sub Category</a> |
+        <a href="templates/supplier_account.html">Supplier Account</a> |
+        <a href="templates/supplier_entry.html">Supplier Entry</a> |
+        <a href="templates/svb_preview.html">SVB Preview</a> |
+        <a href="templates/syndry_creditor_account.html">Syndry Creditor Account</a> |
+        <a href="templates/syndry_debitor_account.html">Syndry Debitor Account</a> |
+        <a href="templates/tag_generator.html">Tag Generator</a> |
+        <a href="templates/tamil_cal.html">Tamil Cal</a> |
+        <a href="templates/turn_over.html">Turn Over</a> |
+        <a href="templates/turn_over1.html">Turn Over 1</a> |
+        <a href="templates/turn_over2.html">Turn Over 2</a> |
+        <a href="templates/type2_bill.html">Type 2 Bill</a> |
+        <a href="templates/type2_report.html">Type 2 Report</a> |
+        <a href="templates/unit.html">Unit</a> |
+        <a href="templates/vbill_all_statement.html">VBill All Statement</a> |
+        <a href="templates/vbill_summary.html">VBill Summary</a> |
+        <a href="templates/withdraw_amount.html">Withdraw Amount</a> |
+    </nav>
+
+    <div class="container" x-data="billingApp()">
+        <h1>Billing Software</h1>
+        <div>
+            <input type="text" placeholder="Item Name" x-model="newItem.name">
+            <input type="number" placeholder="Quantity" x-model="newItem.quantity" min="1">
+            <input type="number" placeholder="Price" x-model="newItem.price" min="0" step="0.01">
+            <button class="btn" @click="addItem()">Add Item</button>
+        </div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="(item, index) in items" :key="index">
+                    <tr>
+                        <td x-text="item.name"></td>
+                        <td x-text="item.quantity"></td>
+                        <td x-text="item.price.toFixed(2)"></td>
+                        <td x-text="(item.quantity * item.price).toFixed(2)"></td>
+                        <td><button @click="removeItem(index)">Remove</button></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    
+        <div class="text-right">
+            <p>Subtotal: <span x-text="subtotal().toFixed(2)"></span></p>
+            <p>Tax (10%): <span x-text="tax().toFixed(2)"></span></p>
+            <h3>Total: <span x-text="total().toFixed(2)"></span></h3>
+        </div>
+    </div>
+</body>
+</html>

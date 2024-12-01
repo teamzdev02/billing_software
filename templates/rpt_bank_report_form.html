@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Report Form</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/rpt_bank_report_form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bank Report</h1>
+            <div class="toolbar">
+                <button id="generateReportButton">Generate Report</button>
+            </div>
+        </header>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <label for="comboBox1">Bank:</label>
+            <select id="comboBox1">
+                <option value="">Select Bank</option>
+                <!-- Populate with dynamic bank options -->
+                <option value="bank1">Bank 1</option>
+                <option value="bank2">Bank 2</option>
+            </select>
+
+            <label for="dateTimePicker1">From Date:</label>
+            <input type="date" id="dateTimePicker1">
+
+            <label for="dateTimePicker2">To Date:</label>
+            <input type="date" id="dateTimePicker2">
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-section">
+            <h3>Report Viewer</h3>
+            <div id="crystalReportViewer">
+                <!-- Placeholder for the report viewer -->
+                <p>Report will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/rpt_bank_report_form.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Expanses</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/purchase_expenses.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase Expanses</h1>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="toolStripButton2">Save</button>
+            <button id="toolStripButton6">Delete</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <label for="dateFrom">From Date:</label>
+            <input type="date" id="dateFrom">
+            <label for="dateTo">To Date:</label>
+            <input type="date" id="dateTo">
+
+            <div>
+                <label for="cbo_labour">Labour:</label>
+                <select id="cbo_labour">
+                    <option value="Labour1">Labour 1</option>
+                    <option value="Labour2">Labour 2</option>
+                    <option value="Labour3">Labour 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Payment Type:</label>
+                <label for="radio1">
+                    <input type="radio" id="radio1" name="paymentType" value="Cash"> Cash
+                </label>
+                <label for="radio2">
+                    <input type="radio" id="radio2" name="paymentType" value="Card"> Card
+                </label>
+                <label for="radio4">
+                    <input type="radio" id="radio4" name="paymentType" value="Cheque"> Cheque
+                </label>
+            </div>
+
+            <div>
+                <label for="checkBox1">
+                    <input type="checkbox" id="checkBox1"> Active Only
+                </label>
+            </div>
+        </div>
+
+        <!-- Date Inputs -->
+        <div class="flex-row">
+            <div class="flex-column">
+                <label for="txtYear">Year:</label>
+                <input type="text" id="txtYear" placeholder="Enter Year">
+            </div>
+            <div class="flex-column">
+                <label for="txtMonth">Month:</label>
+                <input type="text" id="txtMonth" placeholder="Enter Month">
+            </div>
+            <div class="flex-column">
+                <label for="txtDay">Day:</label>
+                <input type="text" id="txtDay" placeholder="Enter Day">
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-container">
+            <table id="dataGridView1">
+                <thead>
+                    <tr>
+                        <th>Ref No</th>
+                        <th>Labour Name</th>
+                        <th>Ledger Date</th>
+                        <th>Amount</th>
+                        <th>Column 1</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows added dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../scripts/purchase_expenses.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/receipt_statement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Statement</h1>
+
+        <!-- Date Filters -->
+        <div class="filter-section">
+            <h2>Filter by Date</h2>
+            <label for="dateTimePicker1">Start Date:</label>
+            <input type="date" id="dateTimePicker1">
+
+            <label for="dateTimePicker2">End Date:</label>
+            <input type="date" id="dateTimePicker2">
+        </div>
+
+        <!-- Report Type -->
+        <div class="filter-section">
+            <h2>Select Report Type</h2>
+            <div class="radio-group">
+                <input type="radio" id="radioButton1" name="reportType" value="Summary">
+                <label for="radioButton1">Summary</label>
+
+                <input type="radio" id="radioButton2" name="reportType" value="Detailed">
+                <label for="radioButton2">Detailed</label>
+
+                <input type="radio" id="radioButton3" name="reportType" value="Custom">
+                <label for="radioButton3">Custom</label>
+            </div>
+        </div>
+
+        <!-- Report Format -->
+        <div class="filter-section">
+            <h2>Select Report Format</h2>
+            <label for="comboBox1">Format:</label>
+            <select id="comboBox1">
+                <option value="pdf">PDF</option>
+                <option value="excel">Excel</option>
+                <option value="print">Print</option>
+            </select>
+        </div>
+
+        <!-- Submit Section -->
+        <div class="actions">
+            <button id="generateReport">Generate Report</button>
+            <button id="setupPage">Page Setup</button>
+        </div>
+
+        <!-- Report Viewer -->
+        <div class="report-viewer">
+            <h2>Report Viewer</h2>
+            <iframe id="reportViewer" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="../scripts/receipt_statement.js"></script>
+</body>
+</html>

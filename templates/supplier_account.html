@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Account</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/supplier_account.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Supplier Account</h1>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="btnNew">New</button>
+            <button id="btnSave">Save</button>
+            <button id="btnClose">Close</button>
+            <button id="btnSearch">Search</button>
+        </div>
+
+        <!-- Input Panel -->
+        <div class="input-panel">
+            <div class="row">
+                <label for="cmb_DorCName">D/C Name:</label>
+                <select id="cmb_DorCName">
+                    <option value="">Select</option>
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="txt_OBalance">Opening Balance:</label>
+                <input type="number" id="txt_OBalance" placeholder="Enter balance">
+            </div>
+            <div class="row">
+                <label for="comboBox1">Supplier Name:</label>
+                <select id="comboBox1">
+                    <option value="">Select Supplier</option>
+                    <!-- Populate dynamically -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/supplier_account.js"></script>
+</body>
+</html>

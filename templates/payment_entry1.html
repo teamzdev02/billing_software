@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Entryy</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/payment_entry1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Entryy</h1>
+
+        <!-- Date and Voucher -->
+        <div class="header">
+            <div>
+                <label for="datePicker">Date:</label>
+                <input type="date" id="datePicker">
+                <span id="weekday">Monday</span>
+            </div>
+            <div>
+                <label for="voucherNo">Voucher No:</label>
+                <input type="text" id="voucherNo">
+            </div>
+        </div>
+
+        <!-- Group and Type -->
+        <div class="group-type">
+            <div>
+                <label for="groupSelect">Group:</label>
+                <select id="groupSelect">
+                    <option value="">Select Group</option>
+                    <option value="Group1">Group1</option>
+                    <option value="Group2">Group2</option>
+                </select>
+            </div>
+            <div>
+                <label for="typeSelect">Type:</label>
+                <select id="typeSelect">
+                    <option value="">Select Type</option>
+                    <option value="Type1">Type1</option>
+                    <option value="Type2">Type2</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Narration Section -->
+        <div class="narrations">
+            <label>Narrations:</label>
+            <textarea id="narration1" placeholder="Narration 1"></textarea>
+            <textarea id="narration2" placeholder="Narration 2"></textarea>
+            <textarea id="narration3" placeholder="Narration 3"></textarea>
+            <textarea id="narration4" placeholder="Narration 4"></textarea>
+            <textarea id="narration5" placeholder="Narration 5"></textarea>
+        </div>
+
+        <!-- Debit and Credit -->
+        <div class="debit-credit">
+            <div>
+                <label for="debit">Debit:</label>
+                <input type="number" id="debit" step="0.01">
+            </div>
+            <div>
+                <label for="credit">Credit:</label>
+                <input type="number" id="credit" step="0.01">
+            </div>
+        </div>
+
+        <!-- Ledger Section -->
+        <div class="ledger-section">
+            <label for="ledgerName">Ledger Name:</label>
+            <input type="text" id="ledgerName">
+        </div>
+
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <h3>Entries</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Voucher</th>
+                        <th>Ledger Name</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Narration</th>
+                    </tr>
+                </thead>
+                <tbody id="entriesTable">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Buttons -->
+        <div class="actions">
+            <button id="addEntry">Add Entry</button>
+            <button id="clearForm">Clear</button>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/payment_entry1.js"></script>
+</body>
+</html>

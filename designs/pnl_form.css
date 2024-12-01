@@ -1,0 +1,48 @@
+/* Styles specific to the Profit and Loss Form */
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Date Range Selector */
+.date-range {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.date-range label {
+    font-weight: bold;
+}
+
+/* Split Container */
+.split-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.panel {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1;
+    background-color: #f9f9f9;
+}
+
+.panel h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.panel p {
+    margin: 5px 0;
+}
+
+.panel p strong {
+    color: #555;
+}

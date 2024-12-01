@@ -1,0 +1,100 @@
+/* General Styles */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.report-filters {
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select {
+    margin-right: 15px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.report-section {
+    margin-top: 20px;
+}
+
+#reportViewer {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reportViewer p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Toolstrip Styles */
+.toolstrip {
+    margin-top: 20px;
+}
+
+.toolstrip button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toolstrip button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Filters */
+.additional-filters {
+    margin-top: 20px;
+}
+
+.additional-filters input {
+    margin-right: 15px;
+}
+
+/* Checkbox Section */
+.checkbox-section {
+    margin-top: 20px;
+}
+
+.checkbox-section input {
+    margin-right: 10px;
+}

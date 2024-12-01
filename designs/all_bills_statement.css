@@ -1,0 +1,45 @@
+/* All Bills Statement Styles */
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters .date-range label,
+.filters .checkboxes label {
+    margin-right: 10px;
+}
+
+.filters input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.data-grid th,
+.data-grid td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.data-grid th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.data-grid td input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.data-grid tbody tr:hover {
+    background-color: #f9f9f9;
+}

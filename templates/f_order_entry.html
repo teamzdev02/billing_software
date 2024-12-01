@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrder Entry</title>
+    <link rel="stylesheet" href="../designs/common.css"> <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../designs/f_order_entry.css"> <!-- FOrder Entry Specific Styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>FOrder Entry</h1>
+
+        <!-- Date and Voucher -->
+        <div class="date-voucher">
+            <label for="orderDate">Order Date:</label>
+            <input type="date" id="orderDate">
+
+            <label for="voucherNo">Voucher No:</label>
+            <input type="text" id="voucherNo" placeholder="Enter Voucher Number">
+        </div>
+
+        <!-- Ledger Info -->
+        <div class="ledger-info">
+            <label for="ledgerName">Ledger Name:</label>
+            <input type="text" id="ledgerName" placeholder="Enter Ledger Name">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter Address">
+        </div>
+
+        <!-- Grid Section -->
+        <div class="grid-section">
+            <h2>Order Details</h2>
+            <table id="orderGrid">
+                <thead>
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Qty</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Code"></td>
+                        <td><input type="text" placeholder="Name"></td>
+                        <td><input type="number" placeholder="Qty"></td>
+                        <td><input type="number" placeholder="Rate"></td>
+                        <td><input type="number" placeholder="Amount"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button id="newEntry">New</button>
+            <button id="saveEntry">Save</button>
+            <button id="modifyEntry">Modify</button>
+            <button id="deleteEntry">Delete</button>
+            <button id="exitApp">Exit</button>
+        </div>
+    </div>
+
+    <script src="../scripts/f_order_entry.js"></script> <!-- FOrder Entry Specific JS -->
+</body>
+</html>

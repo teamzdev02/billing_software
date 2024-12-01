@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Statement</title>
+    <link rel="stylesheet" href="../designs/common.css">
+    <link rel="stylesheet" href="../designs/invoice_statement2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Statement</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <div class="radio-group">
+                <label><input type="radio" name="filterOption" id="radio1"> Option 1</label>
+                <label><input type="radio" name="filterOption" id="radio2"> Option 2</label>
+                <label><input type="radio" name="filterOption" id="radio3"> Option 3</label>
+                <label><input type="radio" name="filterOption" id="radio4"> Option 4</label>
+                <label><input type="radio" name="filterOption" id="radio5"> Option 5</label>
+            </div>
+
+            <div class="filter-group">
+                <label for="comboBox1">Filter by:</label>
+                <select id="comboBox1">
+                    <option value="Filter1">Filter 1</option>
+                    <option value="Filter2">Filter 2</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="textBox1">Field 1:</label>
+                <input type="text" id="textBox1">
+            </div>
+
+            <div class="filter-group">
+                <label for="textBox2">Field 2:</label>
+                <input type="text" id="textBox2">
+            </div>
+
+            <div class="filter-group">
+                <label for="datePicker1">Select Start Date:</label>
+                <input type="date" id="datePicker1">
+            </div>
+
+            <div class="filter-group">
+                <label for="datePicker2">Select End Date:</label>
+                <input type="date" id="datePicker2">
+            </div>
+
+            <div class="button-group">
+                <button id="generateReport">Generate Report</button>
+            </div>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report">
+            <h2>Report</h2>
+            <div id="reportViewer">
+                <!-- Placeholder for report output -->
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <button id="printButton">Print Report</button>
+        </div>
+    </div>
+
+    <script src="../scripts/invoice_statement2.js"></script>
+</body>
+</html>

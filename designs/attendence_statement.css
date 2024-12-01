@@ -1,0 +1,64 @@
+/* Group Box Styling for Attendance Statement */
+.group-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.group-box legend {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Date Picker and ComboBox Styling */
+.date-picker, .combo-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Data Grid for Attendance Records */
+.attendance-grid {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+.attendance-grid th, .attendance-grid td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.attendance-grid th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style for Table Headers */
+.header-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* Custom Styles for Toolbar Buttons */
+.toolbar button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 0 4px;
+}
+
+.toolbar button:nth-child(1) {
+    background-color: #28a745;
+}
+
+.toolbar button:nth-child(2) {
+    background-color: #dc3545;
+}
